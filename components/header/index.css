@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    border-bottom: 1px solid #262626;
+    font-size: 1.125rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 32px;
+    border-bottom: 1px solid #262626;
+    background-image: url();
+}
+
+.banner p {
+    color: white;
+}
+
+.banner a {
+    color: white;
+    padding-inline: 10px;
+}
+
+.banner div {
+    width: 24px;
+    display: hidden;
+}
+
+.banner-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.banner-close:hover{
+    cursor: pointer;
+}
+
+.banner-close svg {
+    width: 12px;
+    height: 12px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-block: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.login-btn{
+    padding: 16px 24px;
+    background-color: var(--gray);
+    border: solid 1px #262626;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 1.125rem;
+}
+
+.login-btn:hover{
+    cursor: pointer;
+}

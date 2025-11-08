@@ -1,18 +1,26 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "myFirstFont";
-    src: url("../assets/fonts/DMSans.ttf");
+    font-family: 'myFirstFont';
+    src: url('../assets/fonts/Urbanist.ttf');
 }
 
 :root {
-    
+    --purple: #703BF7;
+    --white: #ffffff;
+    --background: #1a1a1a;
+    --gray: #141414;
 }
 
 body {
     font-family: myFirstFont;
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 1300px;
 }
