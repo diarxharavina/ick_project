@@ -24,9 +24,7 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="#">Services</a></li>
                 <!-- <li><a href="#">Contact Us</a></li> -->
             </ul>
-            <button class="login-btn">
-                Log In
-            </button>
+            <custom-button type="ghost-btn" name="Contact Us"></custom-button>
         </nav>
     </header>
         `

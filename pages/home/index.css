@@ -38,3 +38,11 @@
     width: 60%;
     color: #999999;
 }
+
+.hero-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
