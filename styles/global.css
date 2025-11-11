@@ -22,6 +22,7 @@ body {
 }
 
 .container {
+    padding-inline: 16px;
     max-width: 1300px;
     margin: auto;
 }
