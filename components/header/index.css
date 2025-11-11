@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-.banner-close svg {
+.banner-close my-icon {
     width: 12px;
     height: 12px;
 }
@@ -114,8 +114,8 @@ header .mobileHeader {
 
     header .mobileHeader .closeMenu {
         position: fixed;
-        top: 2rem;
-        right: 2rem;
+        top: 1.85rem;
+        right: 1rem;
         color: var(--white);
     }
 
