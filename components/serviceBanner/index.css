@@ -1,0 +1,35 @@
+.service-banner{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-block: 20px;
+    background-color: var(--gray);
+    border: 1px solid #262626;
+    outline: 10px solid var(--background);
+}
+
+.service-box{
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    border: 1px solid #262626;
+    background-color: var(--background);
+    border-radius: 12px;
+}
+
+.service-box p{
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.service-box-arrow{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

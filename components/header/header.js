@@ -34,7 +34,7 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="#">Services</a></li>
                 <!-- <li><a href="#">Contact Us</a></li> -->
             </ul>
-            <custom-button type="dark-btn" name="Contact Us"></custom-button>
+            <custom-button type="dark-btn" name="Log In"></custom-button>
 
         </nav>
 
@@ -48,7 +48,7 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="#">Properties</a></li>
                 <li><a href="#">Services</a></li>
                 <li>
-                <custom-button type="dark-btn" name="Contact Us"></custom-button>
+                <custom-button type="dark-btn" name="Log In"></custom-button>
                 </li>
                 <my-icon iconName="burger" onclick="closeMenu()" class="closeMenu"></my-icon>
             </ul>
