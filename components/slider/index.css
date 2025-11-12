@@ -1,0 +1,89 @@
+.slider-section{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.slider-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 140px;
+}
+
+.sparks{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.slider-header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 70%;
+    height: 100%;
+    gap: 10px;
+}
+
+.slider-header-text h1{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.slider-header-text p{
+    font-size: 1.125rem;
+    color: #999999;
+}
+
+.slider-view-all-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 20%;
+    height: 100%;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-item{
+    display: flex;
+}
+
+.slider-number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #262626;
+    padding-top: 20px;
+}
+
+.slider-number p{
+    color: var(--white);
+}
+
+.slider-arrow{
+    display: flex;
+    gap: 10px;
+}
+
+.slider-arrow my-icon{
+    background-color: var(--gray);
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
