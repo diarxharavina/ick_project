@@ -14,17 +14,17 @@ class ServiceBannerComponent extends HTMLElement {
             <div class="service-box">
                 <my-icon iconName="arrow" class="service-box-arrow"></my-icon>
                 <my-icon iconName="money" ></my-icon>
-                <p>Find Your Dream Home</p>
+                <p>Unlock Property Value</p>
             </div>
             <div class="service-box">
                 <my-icon iconName="arrow" class="service-box-arrow"></my-icon>
                 <my-icon iconName="apartment" ></my-icon>
-                <p>Find Your Dream Home</p>
+                <p>Effortless Property Management</p>
             </div>
             <div class="service-box">
                 <my-icon iconName="arrow" class="service-box-arrow"></my-icon>
-                <my-icon iconName="home" ></my-icon>
-                <p>Find Your Dream Home</p>
+                <my-icon iconName="sun" ></my-icon>
+                <p>Smart Investments, Informed Decisions</p>
             </div>
         </section>
         `;
