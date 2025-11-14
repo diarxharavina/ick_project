@@ -48,16 +48,60 @@
     height: 100%;
 }
 
-.slider{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.carousel{
     width: 100%;
+    overflow-x: auto;
+    margin: 3rem auto;
+    display: flex;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
-.slider-item{
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel::scroll-button{
     display: flex;
+    align-items: center;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+    content: "➜";
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--background);
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    border: 1px solid #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carousel::scroll-button(left){
+    content: "➜";
+    transform: scaleX(-1);
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled{
+    opacity: 0.3;
+    cursor: auto;
+}
+
+.carousel-item{
+    scroll-snap-align: start;
+    flex: 0 0 20rem;
+    overflow: hidden;
+    height: 12rem;
+    background-color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    align-content: center;
 }
 
 .slider-number{
