@@ -1,26 +1,26 @@
 class MyIcon extends HTMLElement {
-  // 1) tell the browser we care about "iconName"
-  static get observedAttributes() {
-    return ['iconname']; // lowercase! attributes are case-insensitive
-  }
-
-  connectedCallback() {
-    this.render();
-  }
-
-  // 2) this runs every time iconname="" changes
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (oldValue !== newValue) {
-      this.render();
+    // 1) tell the browser we care about "iconName"
+    static get observedAttributes() {
+        return ['iconname']; // lowercase! attributes are case-insensitive
     }
-  }
 
-  render() {
-    const iconName = this.getAttribute('iconName');
-    const iconColor = this.getAttribute('iconColor');
-    const width = this.getAttribute('width');
-    const height = this.getAttribute('height');
-    const invalidIcon = `
+    connectedCallback() {
+        this.render();
+    }
+
+    // 2) this runs every time iconname="" changes
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (oldValue !== newValue) {
+            this.render();
+        }
+    }
+
+    render() {
+        const iconName = this.getAttribute('iconName');
+        const iconColor = this.getAttribute('iconColor');
+        const width = this.getAttribute('width');
+        const height = this.getAttribute('height');
+        const invalidIcon = `
       <svg
         width="32"
         height="32"
@@ -44,18 +44,18 @@ class MyIcon extends HTMLElement {
       </svg>
     `;
 
-    const icons = {
-      burger: `
+        const icons = {
+            burger: `
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 7.875C3.5 7.39175 3.89175 7 4.375 7H23.625C24.1082 7 24.5 7.39175 24.5 7.875C24.5 8.35825 24.1082 8.75 23.625 8.75H4.375C3.89175 8.75 3.5 8.35825 3.5 7.875ZM3.5 14C3.5 13.5168 3.89175 13.125 4.375 13.125H23.625C24.1082 13.125 24.5 13.5168 24.5 14C24.5 14.4832 24.1082 14.875 23.625 14.875H4.375C3.89175 14.875 3.5 14.4832 3.5 14ZM13.125 20.125C13.125 19.6418 13.5168 19.25 14 19.25H23.625C24.1082 19.25 24.5 19.6418 24.5 20.125C24.5 20.6082 24.1082 21 23.625 21H14C13.5168 21 13.125 20.6082 13.125 20.125Z" fill="white"/>
         </svg>
       `,
-      close: `
+            close: `
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.75 12.75L12.75 0.750001M0.75 0.75L12.75 12.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       `,
-      home: `
+            home: `
         <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint0_linear_121_1892)"/>
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint1_linear_121_1892)"/>
@@ -83,12 +83,12 @@ class MyIcon extends HTMLElement {
           </defs>
         </svg>
       `,
-      arrow: `
+            arrow: `
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 22.25L22.25 1M22.25 1L6.3125 1M22.25 1V16.9375" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       `,
-      money: `
+            money: `
         <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint0_linear_121_1900)"/>
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint1_linear_121_1900)"/>
@@ -117,7 +117,7 @@ class MyIcon extends HTMLElement {
           </defs>
         </svg>
       `,
-      apartment: `
+            apartment: `
         <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint0_linear_121_1908)"/>
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint1_linear_121_1908)"/>
@@ -145,7 +145,7 @@ class MyIcon extends HTMLElement {
           </defs>
         </svg>
       `,
-      sun: `
+            sun: `
         <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint0_linear_121_1916)"/>
           <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint1_linear_121_1916)"/>
@@ -180,7 +180,7 @@ class MyIcon extends HTMLElement {
           </defs>
         </svg>
       `,
-      sparks: `
+            sparks: `
         <svg width="69" height="30" viewBox="0 0 69 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_75_930)">
           <path d="M15 30.0166C23.2843 30.0166 30 23.3009 30 15.0166C30 6.73233 23.2843 0.0166836 15 0.0166836C6.71573 0.0166836 0 6.73233 0 15.0166C0 23.3009 6.71573 30.0166 15 30.0166Z" fill="#666666"/>
@@ -216,20 +216,136 @@ class MyIcon extends HTMLElement {
           </defs>
         </svg>
       `,
-      leftArrow: `
+            leftArrow: `
         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M21 9C21 9.62132 20.4963 10.125 19.875 10.125L3.91812 10.125L10.1547 16.0641C10.6026 16.4947 10.6166 17.2069 10.1859 17.6548C9.75529 18.1026 9.04312 18.1166 8.59525 17.6859L0.345253 9.81094C0.124664 9.59883 -4.06779e-07 9.30602 -3.93403e-07 9C-3.80026e-07 8.69398 0.124664 8.40117 0.345253 8.18906L8.59525 0.314064C9.04312 -0.116579 9.75529 -0.102615 10.1859 0.345254C10.6166 0.793122 10.6026 1.5053 10.1547 1.93594L3.91812 7.875L19.875 7.875C20.4963 7.875 21 8.37868 21 9Z" fill="#808080"/>
         </svg>
       `,
-      rightArrow: `
+            rightArrow: `
         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M-3.93403e-07 9C-4.20561e-07 8.37868 0.503679 7.875 1.125 7.875L17.0819 7.875L10.8453 1.93593C10.3974 1.50529 10.3834 0.793119 10.8141 0.345249C11.2447 -0.102618 11.9569 -0.116583 12.4047 0.31406L20.6547 8.18906C20.8753 8.40116 21 8.69398 21 9C21 9.30602 20.8753 9.59883 20.6547 9.81093L12.4047 17.6859C11.9569 18.1166 11.2447 18.1026 10.8141 17.6547C10.3834 17.2069 10.3974 16.4947 10.8453 16.0641L17.0819 10.125L1.125 10.125C0.503679 10.125 -3.66244e-07 9.62132 -3.93403e-07 9Z" fill="white"/>
         </svg>
       `,
-    };
+            analytics: `
+                <svg
+                    width="82"
+                    height="82"
+                    viewBox="0 0 82 82"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect
+                        x="0.5"
+                        y="0.5"
+                        width="81"
+                        height="81"
+                        rx="40.5"
+                        stroke="url(#paint0_linear_104_11410)"
+                    />
+                    <rect
+                        x="0.5"
+                        y="0.5"
+                        width="81"
+                        height="81"
+                        rx="40.5"
+                        stroke="url(#paint1_linear_104_11410)"
+                    />
+                    <rect
+                        x="10.5"
+                        y="10.5"
+                        width="61"
+                        height="61"
+                        rx="30.5"
+                        stroke="url(#paint2_linear_104_11410)"
+                    />
+                    <rect
+                        x="10.5"
+                        y="10.5"
+                        width="61"
+                        height="61"
+                        rx="30.5"
+                        stroke="url(#paint3_linear_104_11410)"
+                    />
+                    <path
+                        d="M50.0312 27.1875C48.5642 27.1875 47.375 28.3767 47.375 29.8438V52.1562C47.375 53.6233 48.5642 54.8125 50.0312 54.8125H51.0938C52.5608 54.8125 53.75 53.6233 53.75 52.1562V29.8438C53.75 28.3767 52.5608 27.1875 51.0938 27.1875H50.0312Z"
+                        fill="#A685FA"
+                    />
+                    <path
+                        d="M37.8125 36.2188C37.8125 34.7517 39.0017 33.5625 40.4688 33.5625H41.5312C42.9983 33.5625 44.1875 34.7517 44.1875 36.2188V52.1562C44.1875 53.6233 42.9983 54.8125 41.5312 54.8125H40.4688C39.0017 54.8125 37.8125 53.6233 37.8125 52.1562V36.2188Z"
+                        fill="#A685FA"
+                    />
+                    <path
+                        d="M28.25 42.5938C28.25 41.1267 29.4392 39.9375 30.9062 39.9375H31.9688C33.4358 39.9375 34.625 41.1267 34.625 42.5938V52.1562C34.625 53.6233 33.4358 54.8125 31.9688 54.8125H30.9062C29.4392 54.8125 28.25 53.6233 28.25 52.1562V42.5938Z"
+                        fill="#A685FA"
+                    />
+                    <defs>
+                        <linearGradient
+                            id="paint0_linear_104_11410"
+                            x1="6.75"
+                            y1="86.5"
+                            x2="85.75"
+                            y2="-5.5"
+                            gradientUnits="userSpaceOnUse"
+                        >
+                            <stop stop-color="#A685FA" />
+                            <stop
+                                offset="0.323723"
+                                stop-color="#A685FA"
+                                stop-opacity="0"
+                            />
+                        </linearGradient>
+                        <linearGradient
+                            id="paint1_linear_104_11410"
+                            x1="81.75"
+                            y1="-10.5"
+                            x2="6.75"
+                            y2="82"
+                            gradientUnits="userSpaceOnUse"
+                        >
+                            <stop stop-color="#A685FA" />
+                            <stop
+                                offset="0.576615"
+                                stop-color="#A685FA"
+                                stop-opacity="0"
+                            />
+                        </linearGradient>
+                        <linearGradient
+                            id="paint2_linear_104_11410"
+                            x1="3.25"
+                            y1="13.5"
+                            x2="71.75"
+                            y2="72"
+                            gradientUnits="userSpaceOnUse"
+                        >
+                            <stop stop-color="#A685FA" />
+                            <stop
+                                offset="0.323723"
+                                stop-color="#A685FA"
+                                stop-opacity="0"
+                            />
+                        </linearGradient>
+                        <linearGradient
+                            id="paint3_linear_104_11410"
+                            x1="84.25"
+                            y1="86"
+                            x2="12.25"
+                            y2="35"
+                            gradientUnits="userSpaceOnUse"
+                        >
+                            <stop stop-color="#A685FA" />
+                            <stop
+                                offset="0.576615"
+                                stop-color="#A685FA"
+                                stop-opacity="0"
+                            />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            `,
+        };
 
-    this.innerHTML = icons[iconName] || invalidIcon;
-  }
+        this.innerHTML = icons[iconName] || invalidIcon;
+    }
 }
 
 customElements.define('my-icon', MyIcon);
