@@ -48,7 +48,7 @@
 
 .selling-hero-content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 120px;
     padding: 0 24px;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,7 @@
 }
 
 .selling-hero-text h1 {
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,6 +69,7 @@
 }
 
 .selling-hero-text p {
+    margin: 0 10px;
     margin-right: 1rem;
     font-size: 16px;
     font-weight: 400;
