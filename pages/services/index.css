@@ -43,7 +43,6 @@
 .selling-hero {
     width: 100%;
     padding: 90px 0 40px;
-    background: #0d0d0d;
 }
 
 .selling-hero-content {
@@ -76,4 +75,34 @@
     line-height: 150%;
     color: #999999;
     max-width: auto;
+}
+
+.selling-feature {
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 50px;
+    margin-block: 15px;
+    margin-left: -750px;
+    width: 480px;
+    color: #999999;
+    background-color: var(--gray);
+}
+
+.selling-box-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.selling-box-header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.selling-box-text {
+    font-size: 15px;
+    margin-top: 8px;
 }

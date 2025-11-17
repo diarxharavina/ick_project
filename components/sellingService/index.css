@@ -1,0 +1,83 @@
+/* KONTAINERI KRYESOR – qendra dhe 3 karta në një rresht */
+.selling-service {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* KARTA */
+.selling-feature {
+    flex: 1 1 0;
+    min-width: 320px;
+    max-width: 360px;
+
+    border: 1px solid #222;
+    border-radius: 14px;
+    padding: 32px;
+
+    background-color: #101010;
+    color: #c5c6c7;
+
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+}
+
+/* HEADER: ikonë + titull */
+.selling-box-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+/* Stili për <my-icon> – rreth i purpurt si në screenshot */
+.selling-box-header my-icon {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(166, 133, 250, 0.5);
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(166, 133, 250, 0.35),
+        transparent
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #a685fa;
+}
+
+/* Titulli */
+.selling-box-header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Teksti */
+.selling-box-text {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c5c6c7;
+}
+
+/* Responsiv për ekranë të vegjël */
+@media (max-width: 900px) {
+    .selling-service {
+        justify-content: center;
+    }
+
+    .selling-feature {
+        max-width: 100%;
+    }
+}
