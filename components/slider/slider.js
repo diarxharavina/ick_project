@@ -4,18 +4,34 @@ class Component extends HTMLElement {
     }
     render() {
         const type = this.getAttribute('type');
-
+        const title = this.getAttribute('title');
+        const text = this.getAttribute('text');
+        
         this.innerHTML = `
-        <link rel="stylesheet" href="../../components/slider/index.css"/>
-        <section>
+        <link rel="stylesheet" href="../../components/slider/index.css">
+       <section>
             <div class="slider-section container">
-                <my-icon iconName="sparks"></my-icon>
                 <div class="slider-header">
-                    <h1>Featured Properties</h1>
-                    <p>Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+                    <my-icon iconName="sparks" class="sparks"></my-icon>
+                    <div class="slider-header-text">
+                        <h1>${title}</h1>
+                        <p>
+                            ${text}
+                        </p>
+                    </div>
+                    <div class="slider-view-all-btn">
+                        <custom-button
+                            type="ghost-btn"
+                            name="View All ${type}"
+                        ></custom-button>
+                    </div>
                 </div>
-                <div class="slider-view-all-btn">
-                    <custom-button type="ghost-btn" name="View All ${type}"></custom-button>
+                <${type.toLowerCase()}-slider class="carousel"></${type.toLowerCase()}-slider>
+                <div class="slider-number">
+                    <p>
+                        <strong>01</strong>
+                        of 10
+                    </p>
                 </div>
             </div>
         </section>

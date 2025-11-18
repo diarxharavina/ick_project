@@ -1,9 +1,10 @@
 .slider-section{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 30px;
     align-items: flex-start;
     justify-content: space-between;
+    padding-block: 75px;
 }
 
 .slider-header{
@@ -62,7 +63,7 @@
     display: none;
 }
 
-.carousel-item{
+.carousel-item-properties{
     scroll-snap-align: start;
     flex: 0 0 25.5rem;
     overflow: hidden;
@@ -78,7 +79,7 @@
     gap: 30px;
 }
 
-.carousel-item-text{
+.carousel-item-properties-text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -86,20 +87,21 @@
     gap: 6px;
 }
 
-.carousel-item-text h2{
+.carousel-item-properties-text h2{
     color: var(--white);
     font-size: 1.5rem;
 }
 
-.carousel-item-text p{
+.carousel-item-properties-text p{
     font-size: 1.125rem;
     color: #999999;
     text-align: left;
 }
 
-.carousel-item-text a{
+.carousel-item-properties-text a{
     color: var(--white);
     cursor: pointer;
+    font-size: 1.125rem;
     text-decoration: underline;
 }
 
@@ -116,7 +118,7 @@
     color: var(--white);
 }
 
-.carousel-item-info{
+.carousel-item-properties-info{
     display: flex;
     width: 100%;
     align-items: center;
@@ -124,7 +126,7 @@
     gap: 10px;
 }
 
-.carousel-item-info-box{
+.carousel-item-properties-info-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,30 +137,30 @@
     padding: 7px 10px;
 }
 
-.carousel-item-info-box p{
+.carousel-item-properties-info-box p{
     color: var(--white);
     font-size: 0.90rem;
 }
 
-.carousel-item-price{
+.carousel-item-properties-price{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.carousel-item-price div{
+.carousel-item-properties-price div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.carousel-item-price p{
+.carousel-item-properties-price p{
     font-size: 1.125rem;
     color: #999999;
 }
 
-.carousel-item-price h2{
+.carousel-item-properties-price h2{
     font-size: 1.5rem;
     color: var(--white);
     font-weight: 400;
@@ -177,4 +179,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carousel-item-faq{
+    flex: 0 0 25.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+}
+
+.carousel-item-faq h2{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-size: 400;
+}
+
+.carousel-item-faq p{
+    font-size: 1.125rem;
+    color: #999999;
 }

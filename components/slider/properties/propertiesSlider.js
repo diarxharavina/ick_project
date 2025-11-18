@@ -117,33 +117,33 @@ class PropertiesSliderComponent extends HTMLElement {
 
         let carouselItems = '';
         for (let i = 0; i < properties.length; i++) {
-            carouselItems += `<div class="carousel-item">
+            carouselItems += `<div class="carousel-item-properties">
                         <img src="${properties[i].image}" alt="">
-                        <div class="carousel-item-text">
+                        <div class="carousel-item-properties-text">
                             <h2>${properties[i].title}</h2>
                             <p>
                                 ${properties[i].description} <a>Read More</a>
                             </p>
                         </div>
-                        <div class="carousel-item-info">
-                            <div class="carousel-item-info-box">
+                        <div class="carousel-item-properties-info">
+                            <div class="carousel-item-properties-info-box">
                                 <my-icon iconName="bed"></my-icon>
                                 <p>${properties[i].info.bedroom}-bedroom</p>
                             </div>
-                            <div class="carousel-item-info-box">
+                            <div class="carousel-item-properties-info-box">
                                 <my-icon iconName="bath"></my-icon>
                                 <p>${properties[i].info.bedroom}-bathroom</p>
                             </div>
                             ${
                                 properties[i].info.villa
-                                    ? `<div class="carousel-item-info-box">
+                                    ? `<div class="carousel-item-properties-info-box">
                                 <my-icon iconName="villa"></my-icon> <p>Villa</p>
                             </div>`
                                     : ''
                             }
                             
                         </div>
-                        <div class="carousel-item-price">
+                        <div class="carousel-item-properties-price">
                             <div>
                                 <p>Price</p>
                                 <h2>${properties[i].price}</h2>
@@ -155,7 +155,6 @@ class PropertiesSliderComponent extends HTMLElement {
                         </div>
                     </div>`;
         }
-
         this.innerHTML = carouselItems;
     }
 }

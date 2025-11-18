@@ -11,6 +11,10 @@
         <script src="../../components/headerLogo/headerLogo.js"></script>
         <script src="../../components/button/button.js"></script>
         <script src="../../components/serviceBanner/serviceBanner.js"></script>
+        <script src="../../components/slider/slider.js"></script>
+        <script src="../../components/slider/properties/propertiesSlider.js"></script>
+        <script src="../../components/slider/faq/faqSlider.js"></script>
+        <link rel="stylesheet" href="../../components/slider/index.css">
     </head>
     <body>
         <div class="home-wrapper">
@@ -50,6 +54,21 @@
                 </div>
             </section>
             <service-banner></service-banner>
+            <custom-slider 
+                type="Properties" 
+                title="Featured Properties" 
+                text='Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.'
+            ></custom-slider>
+            <custom-slider 
+                type="Testimonials" 
+                title="What Our Clients Say" 
+                text='Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.'
+            ></custom-slider>
+            <custom-slider 
+                type="FAQ" 
+                title="Frequently Asked Questions" 
+                text="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
+            ></custom-slider>
         </div>
     </body>
 </html>
