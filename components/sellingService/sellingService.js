@@ -6,46 +6,58 @@ class SellingServiceComponent extends HTMLElement {
     render() {
         this.innerHTML = `
         <link rel="stylesheet" href="../../components/sellingService/index.css"/>
-
+        <script src="../../components/button/button.js"></script>
         <section class="selling-service">
+
             <div class="selling-feature">
                 <div class="selling-box-header">
                     <my-icon iconName="analytics"></my-icon>
-                    <h1>Tenant Harmony</h1>
+                    <h1>Valuation Mastery</h1>
                 </div>
                 <p class="selling-box-text">
-                    Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies.
-                </p>
+                    Discover the true worth of your property with our expert valuation services.
             </div>
 
             <div class="selling-feature">
                 <div class="selling-box-header">
                     <my-icon iconName="maintenance"></my-icon>
-                    <h1>Maintenance Ease</h1>
+                    <h1>Strategic Marketing</h1>
                 </div>
                 <p class="selling-box-text">
-                    Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.
+                    Selling a property requires more than just a listing; it demands a strategic marketing approach.
                 </p>
             </div>
 
             <div class="selling-feature">
                 <div class="selling-box-header">
                     <my-icon iconName="financial"></my-icon>
-                    <h1>Financial Peace of Mind</h1>
+                    <h1>Negotiation Wizardry</h1>
                 </div>
                 <p class="selling-box-text">
-                    Managing property finances can be complex. Our financial experts take care of rent collection.
+                    Negotiating the best deal is an art, and our negotiation experts are masters of it.
                 </p>
             </div>
              <div class="selling-feature">
                 <div class="selling-box-header">
                     <my-icon iconName="legal"></my-icon>
-                    <h1>Legal Guardian</h1>
+                    <h1>Closing Success</h1>
                 </div>
                 <p class="selling-box-text">
-                    Stay compliant with property laws and regulations effortlessly.
+                   A successful sale is not complete until the closing. We guide you through the intricate closing process.
                 </p>
             </div>
+            
+            <div class="selling-feature selling-feature--wide">
+             <div class="selling-feature-wide-text">
+            <h1>Unlock the Value of Your Property Today</h1>
+            <p>
+                Ready to unlock the true value of your property? Explore our Property Selling
+                Service categories and let us help you achieve the best deal possible for your
+                valuable asset.
+            </p>
+        </div>
+
+         <custom-button type="dark-btn" name="Learn More"></custom-button>
         </section>
         `;
     }
