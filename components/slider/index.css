@@ -203,3 +203,54 @@
     font-size: 1.125rem;
     color: #999999;
 }
+
+.carousel-item-testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    background-color: var(--gray);
+    border: 1px solid #262626;
+    border-radius: 12px;
+}
+
+.stars{
+    display: flex;
+    gap: 10px;
+}
+
+.stars my-icon{
+    padding: 10px;
+    background-color: var(--gray);
+    border: 1px solid #262626;
+    border-radius: 50%;
+}
+
+.testimonials-text{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
+.testimonials-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.testimonials-user-info h3{
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.testimonials-user-info p{
+    color: #999999;
+    font-size: 1.125rem;
+}
