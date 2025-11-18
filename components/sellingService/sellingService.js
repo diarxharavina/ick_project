@@ -7,6 +7,7 @@ class SellingServiceComponent extends HTMLElement {
         this.innerHTML = `
         <link rel="stylesheet" href="../../components/sellingService/index.css"/>
         <script src="../../components/button/button.js"></script>
+
         <section class="selling-service">
 
             <div class="selling-feature">
@@ -37,7 +38,8 @@ class SellingServiceComponent extends HTMLElement {
                     Negotiating the best deal is an art, and our negotiation experts are masters of it.
                 </p>
             </div>
-             <div class="selling-feature">
+
+            <div class="selling-feature">
                 <div class="selling-box-header">
                     <my-icon iconName="legal"></my-icon>
                     <h1>Closing Success</h1>
@@ -48,17 +50,19 @@ class SellingServiceComponent extends HTMLElement {
             </div>
             
             <div class="selling-feature selling-feature--wide">
-             <div class="selling-feature-wide-text">
-            <h1>Unlock the Value of Your Property Today</h1>
-            <p>
-                Ready to unlock the true value of your property? Explore our Property Selling
-                Service categories and let us help you achieve the best deal possible for your
-                valuable asset.
-            </p>
-        </div>
+                <div class="selling-feature-wide-text">
+                <h1>Unlock the Value of Your Property Today</h1>
+                 <p>
+                     Ready to unlock the true value of your property? Explore our Property Selling
+                     Service categories and let us help you achieve the best deal possible for your
+                     valuable asset.
+                </p>
+            </div>
 
-         <custom-button type="dark-btn" name="Learn More"></custom-button>
+          <custom-button type="dark-btn" name="Learn More"></custom-button>
         </section>
+        
+        
         `;
     }
 }
