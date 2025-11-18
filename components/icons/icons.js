@@ -421,9 +421,9 @@ class MyIcon extends HTMLElement {
 <stop stop-color="#A685FA"/>
 <stop offset="0.576615" stop-color="#A685FA" stop-opacity="0"/>
 </linearGradient>
-</defs>
+ </defs>
 </svg>
-`,
+ `,
         };
 
         this.innerHTML = icons[iconName] || invalidIcon;
