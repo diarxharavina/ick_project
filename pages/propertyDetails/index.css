@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.propertyDetailsWraper{
+    padding-left: 162px;
+    padding-right: 162px;
+    padding-top: 120px;
+    background-color: #141414;
+}
+
+.shortDetailsOfProperties{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameinDetails{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.nameinDetails p{
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.priceInDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceInDetails p{
+    color: #999999;
+}
