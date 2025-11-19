@@ -6,7 +6,7 @@ class Component extends HTMLElement {
         const type = this.getAttribute('type');
         const title = this.getAttribute('title');
         const text = this.getAttribute('text');
-        
+
         this.innerHTML = `
         <link rel="stylesheet" href="../../components/slider/index.css">
        <section>

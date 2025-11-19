@@ -6,52 +6,83 @@ class TestimonialsSliderComponent extends HTMLElement {
     render() {
         const testimonials = [
             {
-                stars: '5',
+                stars: 5,
                 title: 'Exceptional Service!',
-                description: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
-                avatar: '',
+                description:
+                    "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+                avatar: '../../../assets/images/testimonialsAvatar1.png',
                 user: 'Wade Warren',
-                location: 'USA, California'
+                location: 'USA, California',
             },
             {
-                stars: '2',
+                stars: 2,
                 title: 'Efficient and Reliable',
-                description: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
-                avatar: '',
+                description:
+                    "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+                avatar: '../../../assets/images/testimonialsAvatar2.png',
                 user: 'Emelie Thomson',
-                location: 'USA, Florida'
+                location: 'USA, Florida',
             },
             {
-                stars: '4',
+                stars: 4,
                 title: 'Trusted Advisors',
-                description: "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
-                avatar: '',
+                description:
+                    'The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!',
+                avatar: '../../../assets/images/testimonialsAvatar3.png',
                 user: 'John Mans',
-                location: 'USA, Nevada'
+                location: 'USA, Nevada',
             },
+            {
+                stars: 5,
+                title: 'Exceptional Service!',
+                description:
+                    "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+                avatar: '../../../assets/images/testimonialsAvatar1.png',
+                user: 'Wade Warren',
+                location: 'USA, California',
+            },
+            {
+                stars: 2,
+                title: 'Efficient and Reliable',
+                description:
+                    "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+                avatar: '../../../assets/images/testimonialsAvatar2.png',
+                user: 'Emelie Thomson',
+                location: 'USA, Florida',
+            },
+            {
+                stars: 4,
+                title: 'Trusted Advisors',
+                description:
+                    'The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!',
+                avatar: '../../../assets/images/testimonialsAvatar3.png',
+                user: 'John Mans',
+                location: 'USA, Nevada',
+            }
         ];
-        
-        let starsIcon = '';
+
         let carouselItems = '';
-
-        for (let s = 0; s < stars; s++) {
-            starsIcon += '<my-icon iconName="star"></my-icon>';
-        }
-
+        
         for (let i = 0; i < testimonials.length; i++) {
+            let starsIcon = ''; 
+
+            for (let j = 0; j < testimonials[i].stars; j++) {
+                starsIcon += '<my-icon iconName="star"></my-icon>';
+            }
+
             carouselItems += `<div class="carousel-item-testimonials">
                                 <div class="stars">
                                     ${starsIcon}
                                 </div>
                                 <div class="testimonials-text">
-                                    <h2>${title}</h2>
-                                    <p>${description}</p>
+                                    <h2>${testimonials[i].title}</h2>
+                                    <p>${testimonials[i].description}</p>
                                 </div>
                                 <div class="testimonials-user">
-                                    <img src="${avatar}" alt="">
+                                    <img src="${testimonials[i].avatar}" alt="">
                                     <div class="testimonials-user-info">
-                                        <h3>${user}</h3>
-                                        <p>${location}</p>
+                                        <h3>${testimonials[i].user}</h3>
+                                        <p>${testimonials[i].location}</p>
                                     </div>
                                 </div>
                             </div>`;
