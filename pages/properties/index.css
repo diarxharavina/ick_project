@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.findYourDreamPropertyContainer{
+    width: 100vw;
+    height: 450px;
+    background: linear-gradient(to right, #262626, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 162px;        
+    padding-right: 400px;
+    border-bottom: #262626 solid 1px;
+}
+
+.findYourDreamPropertyContainer h1 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 150%;
+    letter-spacing: 0; 
+    margin-top: 150px;
+    color: white;
+}
+
+.findYourDreamPropertyContainer p { 
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.125rem; 
+    line-height: 150%;
+    letter-spacing: 0;  
+    color: #999999;
+}
+
+.searchForAPropertyContainer{
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: -52px; 
+}
+
+.searchBarContainer{
+    height: 103px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchBar{
+    height: 103px;
+    background-color: #141414;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 24px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: solid #1A1A1A 10px;
+    gap: 50px;
+}
+
+.searchInput{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.searchButton{
+    height: 63px;
+    background-color: #703BF7;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 150%;
+    letter-spacing: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.searchFiltersContainer{
+    height: 92px;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.filterNo1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px #262626 solid;
+    background-color: #141414;
+    color: #999999;
+    border-radius: 12px;
+    padding: 22.5px 20px 22.5px 20px;
+    gap:0px;
+}
+
+.leftContainerInFilters{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.leftContainerInFilters p{
+    width: 130px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.125rem; 
+    line-height: 150%;
+    letter-spacing: 0;
+    border-left: 1px solid #262626;
+    padding-left: 10px;
+}
+
+.dropDownSVG{
+    width: 24px;
+    height: 24px;
+    background-color: #1A1A1A;
+    border-radius: 46px;
+}
+
+.discoverAWorldOfPossibilitiesContainer{
+    width: 100vh;
+    height: 153px;
+    background-color: #141414;
+    margin-top: -153px;
+}
+
+.featuredPossibilitiesSection{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap: 30px;
+}
+
+.possibilitiesContainer{
+    width: 512.33px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #262626;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 12px;
+}
+
+.possibilitiesContainer img{
+    width: 432.33px;
+    height: 318px;
+}
+
+.possibilitiesContainer h5{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: white;
+    border-radius: 28px;
+    border: #262626 1px solid;
+    padding: 8px 14px 8px 14px;
+    background-color: #1A1A1A;
+}
+
+.possibilitiesDescription{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.possibilitiesDescription h4{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: white;
+}
+
+.possibilitiesDescription p{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #999999;
+}
+
+.possibilitiesPrice{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.possibilitiesPrice p{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: grey;
+}
+
+.possibilitiesPrice h3{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: white;
+}
+
+.possibilitiesDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+
+/*use rem*/
+/*create and use components*/
+/*width?*/
+/*icons*/
+/*search for a property should be input*/
