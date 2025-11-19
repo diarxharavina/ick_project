@@ -252,6 +252,104 @@
     gap: 50px;
 }
 
+.mainFormContainer{
+    margin-top: 80px;
+    margin-left: 162px;
+    margin-right: 162px;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 100px;
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.formRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+    gap: 16px;
+}
+
+.inputTable{
+    background-color: #1A1A1A;
+    color: #666666;
+    padding: 24px 20px 24px 20px;
+    border: solid 1px #262626;
+    border-radius: 8px;
+}
+
+.budgetFormRow{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.contactMethod{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.messageFormRow{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+
+.messageInputTable{
+    height: 170px;
+    width: 100%;
+    background-color: #1A1A1A;
+    color: #666666;
+    padding: 24px 20px 24px 20px;
+    border: solid 1px #262626;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.termsFormRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.termsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.termsContainer input{
+    width: 28px;
+    height: 28px;
+    background-color: #1A1A1A;
+    border: solid 1px #262626;
+    border-radius: 4px;
+}
+
+.termsContainer label{
+    color: #4C4C4C;
+}
+
+
 
 
 /*use rem*/
