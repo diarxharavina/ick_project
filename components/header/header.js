@@ -40,7 +40,7 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="../../pages/services/index.html">Services</a></li>
                 <!-- <li><a href="#">Contact Us</a></li> -->
             </ul>
-            <custom-button type="dark-btn" name="Log In"></custom-button>
+            <custom-button type="dark-btn" name="Log In" onclick="location.href='../../pages/login/index.html'"></custom-button>
 
         </nav>
 
@@ -49,12 +49,12 @@ class HeaderComponent extends HTMLElement {
             <header-logo></header-logo>
             <my-icon iconName="burger" onclick="openMenu()" class="burger"></my-icon>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Properties</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="../../pages/home/index.html">Home</a></li>
+                <li><a href="../../pages/about">About Us</a></li>
+                <li><a href="../../pages/properties/index.html">Properties</a></li>
+                <li><a href="../../pages/services/index.html">Services</a></li>
                 <li>
-                <custom-button type="dark-btn" name="Log In"></custom-button>
+                <custom-button type="dark-btn" name="Log In"><a href="../../pages/login/index.html"></a></custom-button>
                 </li>
                 <my-icon iconName="burger" onclick="closeMenu()" class="closeMenu"></my-icon>
             </ul>
