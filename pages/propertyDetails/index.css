@@ -50,6 +50,7 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .propertiesSmallPictures{
@@ -77,3 +78,101 @@
 .propertiesBigPictures img{
     width: 50%;
 }
+
+.descriptionAndFeaturesContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.descriptionContainer{
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    padding: 50px;
+    color: white;
+}
+
+.descriptionContainer p{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #262626;
+    margin-top: 14px;
+}
+
+.specificsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px; 
+    
+}
+
+.specificsOnDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconAndNameContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.keyAndFeaturesContainer{
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.keyAndFeaturesContainer h3{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+p{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;    
+}
+
+.detailsOnFeaturesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detailsOnFeatures{
+    background: linear-gradient(to right, #1A1A1A 100%, transparent);
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    border-left: 1px solid #703BF7;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
