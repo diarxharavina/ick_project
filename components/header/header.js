@@ -34,10 +34,10 @@ class HeaderComponent extends HTMLElement {
         <nav class="navbar container desktopHeader">
             <header-logo></header-logo>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Properties</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="../../pages/home/index.html">Home</a></li>
+                <li><a href="../../pages/about">About Us</a></li>
+                <li><a href="../../pages/properties/index.html">Properties</a></li>
+                <li><a href="../../pages/services/index.html">Services</a></li>
                 <!-- <li><a href="#">Contact Us</a></li> -->
             </ul>
             <custom-button type="dark-btn" name="Log In"></custom-button>
@@ -61,6 +61,12 @@ class HeaderComponent extends HTMLElement {
         </nav>
     </header>
         `;
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
     }
 }
 customElements.define('custom-header', HeaderComponent);

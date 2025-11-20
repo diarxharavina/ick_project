@@ -6,6 +6,7 @@
     width: 100vw;
     border-bottom: 1px solid #262626;
     font-size: 1.125rem;
+    background-color: var(--background);
 }
 
 .banner {
@@ -78,6 +79,13 @@
 .nav-links a {
     color: var(--white);
     text-decoration: none;
+}
+
+.nav-links a.active {
+    padding: 16px 24px;
+    border-radius: 10px;
+    background-color: var(--gray);
+    border: solid 1px #262626;
 }
 
 header .mobileHeader {
