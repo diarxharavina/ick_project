@@ -271,9 +271,8 @@
 .formRow{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
 }
 
 .questions{
@@ -287,22 +286,30 @@
 .inputTable{
     background-color: #1A1A1A;
     color: #666666;
-    padding: 24px 20px 24px 20px;
+    padding: 14px 20px 14px 20px;
+    /*padding: 24px 20px 24px 20px;*/
     border: solid 1px #262626;
     border-radius: 8px;
 }
 
-.budgetFormRow{
+.budgetFormRow {
     display: flex;
-    flex-direction: row;
     gap: 50px;
 }
 
-.contactMethod{
+.budgetFormRow > div {
+    flex: 1;
+}
+
+.contactMethod {
     display: flex;
-    flex-direction: row;
     gap: 16px;
 }
+
+.contactMethod > div {
+    flex: 1;
+}
+
 
 .messageFormRow{
     display: flex;
