@@ -1,0 +1,173 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    margin-block: 150px;
+    margin-left: 120px;
+}
+
+.contact-page-text {
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contact-page-text h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+.contact-page-text p {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #999999;
+    max-width: 80%;
+}
+
+.connect-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin-block: 80px;
+    padding-inline: 150px;
+}
+
+.connect-text {
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.connect-text h1 {
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+
+.connect-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #999999;
+}
+.contact-section {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field.full textarea {
+    height: 180px;
+}
+
+label {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    background: #0f0f0f;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.checkbox a {
+    color: white;
+}
+
+.btn-send {
+    background: #7a3dfb;
+    padding: 14px 34px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-left: 140px;
+}
+
+.tab {
+    background: #111;
+    color: #ffffff;
+    border: 1px solid #262626;
+    padding: 10px 26px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.tab:hover {
+    border-color: #444;
+}
