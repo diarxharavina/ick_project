@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../../styles/global.css" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="../../components/header/header.js"></script>
+        <script src="../../components/icons/icons.js"></script>
+        <script src="../../components/headerLogo/headerLogo.js"></script>
+        <script src="../../components/button/button.js"></script>
+        <script src="../../components/contactBanner/contactBanner.js"></script>
+    </head>
+    <body>
+        <div class="contact-page">
+            <custom-header></custom-header>
+            <div class="contact-page-content">
+                <div class="contact-page-text">
+                    <h1>Get in Touch with Estatein</h1>
+                    <p>
+                        Welcome to Estatein's Contact Us page. We're here to
+                        assist you with any inquiries, requests, or feedback you
+                        may have. Whether you're looking to buy or sell a
+                        property, explore investment opportunities, or simply
+                        want to connect, we're just a message away. Reach out to
+                        us, and let's start a conversation.
+                    </p>
+                </div>
+            </div>
+            <contact-banner></contact-banner>
+        </div>
+
+        <section class="connect-section">
+            <div class="connect-content">
+                <div class="connect-text">
+                    <my-icon iconName="sparks"></my-icon>
+                    <h1>Let's Connect</h1>
+                    <p>
+                        We're excited to connect with you and learn more about
+                        your real estate goals. Use the form below to get in
+                        touch with Estatein. Whether you're a prospective
+                        client, partner, or simply curious about our services,
+                        we're here to answer your questions and provide the
+                        assistance you need.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <form class="contact-form">
+                <div class="row">
+                    <div class="field">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter First Name" />
+                    </div>
+
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter Last Name" />
+                    </div>
+
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your Email" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label>Phone</label>
+                        <input type="text" placeholder="Enter Phone Number" />
+                    </div>
+
+                    <div class="field">
+                        <label>Inquiry Type</label>
+                        <select>
+                            <option>Select Inquiry Type</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>How Did You Hear About Us?</label>
+                        <select>
+                            <option>Select</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field full">
+                    <label>Message</label>
+                    <textarea
+                        placeholder="Enter your Message here.."
+                    ></textarea>
+                </div>
+
+                <div class="form-bottom">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <span>
+                            I agree with
+                            <a href="#">Terms of Use</a>
+                            and
+                            <a href="#">Privacy Policy</a>
+                        </span>
+                    </label>
+
+                    <button class="btn-send">Send Your Message</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="connect-section">
+            <div class="connect-content">
+                <div class="connect-text">
+                    <my-icon iconName="sparks"></my-icon>
+                    <h1>Discover Our Office Locations</h1>
+                    <p>
+                        We're excited to connect with you and learn more about
+                        your real estate goals. Use the form below to get in
+                        touch with Estatein. Whether you're a prospective
+                        client, partner, or simply curious about our services,
+                        we're here to answer your questions and provide the
+                        assistance you need.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="buttons">
+            <button class="tab">All</button>
+            <button class="tab">Regional</button>
+            <button class="tab">International</button>
+        </div>
+        #
+
+        <div>
+            <h3>Main Headquarters</h3>
+            <h1>123 Estatein Plaza, City Center, Metropolis</h1>
+            <p>
+                Our main headquarters serve as the heart of Estatein. Located in
+                the bustling city center, this is where our core team of experts
+                operates, driving the excellence and innovation that define us.
+            </p>
+
+            <div>
+                <button>
+                    <my-icon iconName="email"></my-icon>
+                    info@estatein.com
+                </button>
+                <button>
+                    <my-icon iconName="phone"></my-icon>
+                    +1 (123) 456-7890
+                </button>
+                <button>
+                    <my-icon iconName="location"></my-icon>
+                    Metropolis
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
