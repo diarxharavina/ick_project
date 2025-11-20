@@ -40,3 +40,40 @@
 .priceInDetails p{
     color: #999999;
 }
+
+.propertiesContainer{
+    background-color: #1A1A1A;
+    border: 1px solid  #262626;
+    border-radius: 12px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.propertiesSmallPictures{
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.propertiesSmallPictures img{
+    width: 12%;
+    height: 64px;
+}
+
+.propertiesBigPictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.propertiesBigPictures img{
+    width: 50%;
+}
