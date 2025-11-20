@@ -8,7 +8,6 @@ class Component extends HTMLElement {
         const text = this.getAttribute('text');
 
         this.innerHTML = `
-        <link rel="stylesheet" href="../../components/slider/index.css">
        <section>
             <div class="slider-section container">
                 <div class="slider-header">

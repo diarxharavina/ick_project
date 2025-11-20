@@ -15,7 +15,7 @@ class TestimonialsSliderComponent extends HTMLElement {
                 location: 'USA, California',
             },
             {
-                stars: 2,
+                stars: 1,
                 title: 'Efficient and Reliable',
                 description:
                     "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
@@ -64,11 +64,14 @@ class TestimonialsSliderComponent extends HTMLElement {
         let carouselItems = '';
         
         for (let i = 0; i < testimonials.length; i++) {
-            let starsIcon = ''; 
+            // let starsIcon = ''; 
 
-            for (let j = 0; j < testimonials[i].stars; j++) {
-                starsIcon += '<my-icon iconName="star"></my-icon>';
-            }
+            // for (let j = 0; j < testimonials[i].stars; j++) {
+            //     starsIcon += '<my-icon iconName="star"></my-icon>';
+            // }
+
+            const starsIcon = '<my-icon iconName="star"></my-icon>'.repeat(testimonials[i].stars);
+
 
             carouselItems += `<div class="carousel-item-testimonials">
                                 <div class="stars">

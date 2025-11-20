@@ -1,4 +1,4 @@
-.slider-section{
+.slider-section {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -7,7 +7,7 @@
     padding-block: 75px;
 }
 
-.slider-header{
+.slider-header {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -15,13 +15,13 @@
     height: 140px;
 }
 
-.sparks{
+.sparks {
     position: absolute;
     top: -15px;
     left: -15px;
 }
 
-.slider-header-text{
+.slider-header-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -30,17 +30,17 @@
     gap: 10px;
 }
 
-.slider-header-text h1{
+.slider-header-text h1 {
     font-size: 3rem;
     color: var(--white);
 }
 
-.slider-header-text p{
+.slider-header-text p {
     font-size: 1.125rem;
     color: #999999;
 }
 
-.slider-view-all-btn{
+.slider-view-all-btn {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -49,7 +49,7 @@
     height: 100%;
 }
 
-.carousel{
+.carousel {
     width: 100%;
     overflow-x: auto;
     margin: 3rem auto;
@@ -57,13 +57,39 @@
     gap: 1rem;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    anchor-name: --carousel;
 }
 
-.carousel::-webkit-scrollbar{
+.carousel::-webkit-scrollbar {
     display: none;
 }
 
-.carousel-item-properties{
+.carousel::scroll-button(right), .carousel::scroll-button(left) {
+    content: '➜';
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--gray);
+    border: 1px solid #262626;
+    border-radius: 50%;
+    color: var(--white);
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: right center;
+}
+
+.carousel::scroll-button(left){
+    content: '➜';
+    transform: scaleX(-1);
+    position-area: left center;
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+    opacity: 0.2;
+    cursor: auto;
+}
+
+.carousel-item-properties {
     scroll-snap-align: start;
     flex: 0 0 25.5rem;
     overflow: hidden;
@@ -79,7 +105,7 @@
     gap: 30px;
 }
 
-.carousel-item-properties-text{
+.carousel-item-properties-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -87,25 +113,25 @@
     gap: 6px;
 }
 
-.carousel-item-properties-text h2{
+.carousel-item-properties-text h2 {
     color: var(--white);
     font-size: 1.5rem;
 }
 
-.carousel-item-properties-text p{
+.carousel-item-properties-text p {
     font-size: 1.125rem;
     color: #999999;
     text-align: left;
 }
 
-.carousel-item-properties-text a{
+.carousel-item-properties-text a {
     color: var(--white);
     cursor: pointer;
     font-size: 1.125rem;
     text-decoration: underline;
 }
 
-.slider-number{
+.slider-number {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,11 +140,11 @@
     padding-top: 20px;
 }
 
-.slider-number p{
+.slider-number p {
     color: var(--white);
 }
 
-.carousel-item-properties-info{
+.carousel-item-properties-info {
     display: flex;
     width: 100%;
     align-items: center;
@@ -126,7 +152,7 @@
     gap: 10px;
 }
 
-.carousel-item-properties-info-box{
+.carousel-item-properties-info-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,41 +163,41 @@
     padding: 7px 10px;
 }
 
-.carousel-item-properties-info-box p{
+.carousel-item-properties-info-box p {
     color: var(--white);
-    font-size: 0.90rem;
+    font-size: 0.9rem;
 }
 
-.carousel-item-properties-price{
+.carousel-item-properties-price {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.carousel-item-properties-price div{
+.carousel-item-properties-price div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.carousel-item-properties-price p{
+.carousel-item-properties-price p {
     font-size: 1.125rem;
     color: #999999;
 }
 
-.carousel-item-properties-price h2{
+.carousel-item-properties-price h2 {
     font-size: 1.5rem;
     color: var(--white);
     font-weight: 400;
 }
 
-.slider-arrow{
+.slider-arrow {
     display: flex;
     gap: 10px;
 }
 
-.slider-arrow my-icon{
+.slider-arrow my-icon {
     background-color: var(--gray);
     height: 58px;
     width: 58px;
@@ -181,8 +207,10 @@
     align-items: center;
 }
 
-.carousel-item-faq{
+.carousel-item-faq {
+    scroll-snap-align: start;
     flex: 0 0 25.5rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -193,19 +221,21 @@
     border: 1px solid #262626;
 }
 
-.carousel-item-faq h2{
+.carousel-item-faq h2 {
     font-size: 1.5rem;
     color: var(--white);
     font-size: 400;
 }
 
-.carousel-item-faq p{
+.carousel-item-faq p {
     font-size: 1.125rem;
     color: #999999;
 }
 
-.carousel-item-testimonials{
+.carousel-item-testimonials {
+    scroll-snap-align: start;
     flex: 0 0 25.5rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -217,19 +247,19 @@
     border-radius: 12px;
 }
 
-.stars{
+.stars {
     display: flex;
     gap: 10px;
 }
 
-.stars my-icon{
+.stars my-icon {
     padding: 10px;
     background-color: var(--gray);
     border: 1px solid #262626;
     border-radius: 50%;
 }
 
-.testimonials-text{
+.testimonials-text {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -238,20 +268,20 @@
     color: var(--white);
 }
 
-.testimonials-user{
+.testimonials-user {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
 }
 
-.testimonials-user-info h3{
+.testimonials-user-info h3 {
     color: var(--white);
     font-size: 1.25rem;
     font-weight: 400;
 }
 
-.testimonials-user-info p{
+.testimonials-user-info p {
     color: #999999;
     font-size: 1.125rem;
 }

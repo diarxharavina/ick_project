@@ -7,13 +7,14 @@ class HeaderComponent extends HTMLElement {
             window.document
                 .querySelector('.mobileHeader .nav-links')
                 .classList.add('open');
-        };
+        }
 
         window.closeMenu = () => {
             window.document
                 .querySelector('.mobileHeader .nav-links')
                 .classList.remove('open');
-        };
+        }
+
 
         this.innerHTML = `
         <link rel="stylesheet" href="../../components/header/index.css"/>
