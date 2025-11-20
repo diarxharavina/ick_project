@@ -1,4 +1,4 @@
-.selling-service {
+.property-value {
     max-width: 1200px;
     margin: 0;
     padding: 80px 0 40px;
@@ -6,7 +6,7 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
-.selling-feature {
+.property-value-feature {
     border: 1px solid #222;
     border-radius: 14px;
     padding: 32px;
@@ -14,21 +14,21 @@
     color: #c5c6c7;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
 }
-.selling-box-header {
+.propety-value-box-header {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-bottom: 14px;
 }
 
-.selling-box-header h1 {
+.propety-value-box-header h1 {
     margin: 0;
     font-size: 20px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.selling-box-text {
+.property-value-box-text {
     margin: 0;
     margin-top: 8px;
     font-size: 14px;
@@ -36,7 +36,7 @@
     color: #c5c6c7;
 }
 
-.selling-feature--wide {
+.property-value-feature--wide {
     grid-column: span 2;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
     gap: 32px;
 }
 
-.selling-feature-wide-text h1 {
+.property-value-feature-wide-text h1 {
     margin: 0 0 12px;
     font-size: 24px;
     font-weight: 600;
