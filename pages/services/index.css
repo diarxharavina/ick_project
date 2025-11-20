@@ -38,3 +38,145 @@
     color: #999999;
     max-width: 80%;
 }
+
+.property-value-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.property-value-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin-block: 80px;
+    padding-inline: 150px;
+}
+.property-value-text {
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.property-value-text h1 {
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+.property-value-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #999999;
+}
+
+.property-management-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.property-management-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin-block: 80px;
+    padding-inline: 150px;
+}
+.property-management-text {
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.property-management-text h1 {
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+.property-management-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #999999;
+}
+
+.investments-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-inline: 150px;
+    margin-block: 80px;
+    gap: 40px;
+}
+
+.investments-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0 0 40%;
+}
+
+.investments-content h1 {
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+    line-height: 120%;
+}
+
+.investments-content p {
+    color: #999999;
+    max-width: 150%;
+    width: 100%;
+    max-width: 340px;
+}
+
+.investments-potencial-section {
+    background-image: url('../../assets/images/Banner.png');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #222;
+    border-radius: 14px;
+    padding: 28px;
+    margin-top: 20px;
+    max-width: 380px;
+}
+
+.investments-potencial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.investments-potencial-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.investments-potencial-content p {
+    font-size: 14px;
+    line-height: 150%;
+    color: #c5c6c7;
+    max-width: 300px;
+}
+.btn-learn-more {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #262626;
+    border-radius: 999px;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}

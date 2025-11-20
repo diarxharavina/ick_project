@@ -14,6 +14,7 @@
         <script src="../../components/propertyValue/propertyValue.js"></script>
         <script src="../../components/propertyManagement/propertyManagement.js"></script>
         <script src="../../components/footer/footer.js"></script>
+        <script src="../../components/cards/cardsInv.js"></script>
     </head>
     <body>
         <div class="services-page">
@@ -32,7 +33,7 @@
             <service-banner></service-banner>
         </div>
 
-        <section class="property-value">
+        <section class="property-value-section">
             <div class="property-value-content">
                 <div class="property-value-text">
                     <my-icon iconName="sparks"></my-icon>
@@ -47,29 +48,29 @@
                     </p>
                 </div>
             </div>
+            <property-value></property-value>
         </section>
-        <property-value></property-value>
-        <!-- 
-            <section class="property-management">
-                <div class="property-management-content">
-                    <div class="property-management-text">
-                        <my-icon iconName="sparks"></my-icon>
-                        <h1>Effortless Property Management</h1>
-                        <p>
-                            Owning a property should be a pleasure, not a
-                            hassle. Estatein's Property Management Service takes
-                            the stress out of property ownership, offering
-                            comprehensive solutions tailored to your needs.
-                            Explore the categories below to see how we can make
-                            property management effortless for you
-                        </p>
-                    </div>
+
+        <section class="property-management-section">
+            <div class="property-management-content">
+                <div class="property-management-text">
+                    <my-icon iconName="sparks"></my-icon>
+                    <h1>Effortless Property Management</h1>
+                    <p>
+                        Owning a property should be a pleasure, not a hassle.
+                        Estatein's Property Management Service takes the stress
+                        out of property ownership, offering comprehensive
+                        solutions tailored to your needs. Explore the categories
+                        below to see how we can make property management
+                        effortless for you
+                    </p>
                 </div>
-            </section> -->
-        <!-- <property-management></property-management> -->
-        <!-- 
-        <section>
-            <div>
+            </div>
+            <property-management></property-management>
+        </section>
+
+        <section class="investments-section">
+            <div class="investments-content">
                 <my-icon iconName="sparks"></my-icon>
                 <h1>
                     Smart Investments,
@@ -81,28 +82,21 @@
                     approach. Estatein's Investment Advisory Service empowers
                     you to make smart investments and informed decisions.
                 </p>
-            </div>
 
-            <div>
-                <h3>Unlock Your Investment Potential</h3>
-                <p>
-                    Explore our Property Management Service categories and let
-                    us handle the complexities while you enjoy the benefits of
-                    property ownership.
-                </p>
-                <button>Learn More</button>
+                <section class="investments-potencial-section">
+                    <div class="investments-potencial-content">
+                        <h3>Unlock Your Investment Potential</h3>
+                        <p>
+                            Explore our Property Management Service categories
+                            and let us handle the complexities while you enjoy
+                            the benefits of property ownership.
+                        </p>
+                        <button class="btn-learn-more">Learn More</button>
+                    </div>
+                </section>
             </div>
-
-            <div>
-                <my-icon iconName="analytics"></my-icon>
-                <h1>Market Insight</h1>
-                <p>
-                    Stay ahead of market trends with our expert Market Analysis.
-                    We provide in-depth insights into real estate market
-                    conditions
-                </p>
-            </div>
-        </section> -->
+            <cards-inv></cards-inv>
+        </section>
         <coustom-footer></coustom-footer>
     </body>
 </html>
