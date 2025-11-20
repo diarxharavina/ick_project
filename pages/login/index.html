@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../../styles/global.css">
-    <script src="../../components/header/header.js"></script>
-    <script src="../../components/icons/icons.js"></script>
-    <script src="../../components/headerLogo/headerLogo.js"></script>
-    <script src="../../components/button/button.js"></script>
-</head>
-<body>
-    <custom-header></custom-header>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="../../styles/global.css" />
+        <script src="../../components/header/header.js"></script>
+        <script src="../../components/icons/icons.js"></script>
+        <script src="../../components/headerLogo/headerLogo.js"></script>
+        <script src="../../components/button/button.js"></script>
+    </head>
+    <body>
+        <custom-header></custom-header>
+        <div class="login-container">
+            <div class="login-register-buttons">
+                <p class="signup-btn">Sign Up</p>
+                <p class="login-btn">Log In</p>
+            </div>
+            <h2>Log In</h2>
+            <form class="login-form">
+                <div class="row">
+                    <div class="field">
+                        <label>First name</label>
+                        <input type="text" />
+                    </div>
+
+                    <div class="field">
+                        <label>Last name</label>
+                        <input type="text" />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Email address</label>
+                    <input type="email" />
+                </div>
+
+                <button type="submit" class="submit-login-btn btn">Sign up</button>
+            </form>
+        </div>
+    </body>
 </html>
