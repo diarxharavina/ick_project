@@ -15,6 +15,11 @@ class HeaderComponent extends HTMLElement {
                 .classList.remove('open');
         }
 
+        window.closeBanner = () => {
+            window.document
+                .querySelector('.header .banner')
+                .classList.add('hidden');
+        };
 
         this.innerHTML = `
         <link rel="stylesheet" href="../../components/header/index.css"/>
@@ -22,8 +27,8 @@ class HeaderComponent extends HTMLElement {
         <div class="banner">
             <div></div>
             <p>✨Discover Your Dream Property with Estatein <a href="#">Learn More</a></p>
-            <button class="banner-close">
-                <my-icon iconName="close"></my-icn
+            <button class="banner-close" onclick="closeBanner()">
+                <my-icon iconName="close"></my-icon>
             </button>
         </div>
         <nav class="navbar container desktopHeader">

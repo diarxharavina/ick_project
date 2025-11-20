@@ -21,6 +21,10 @@
     background-repeat: no-repeat;
 }
 
+.banner.hidden {
+    display: none;
+}
+
 .banner p {
     color: white;
 }
