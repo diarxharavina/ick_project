@@ -171,3 +171,151 @@ textarea {
 .tab:hover {
     border-color: #444;
 }
+
+.cards-locations {
+    max-width: 1500px;
+    margin: 40px auto;
+    display: flex;
+    gap: 24px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.main-headquartes {
+    background: #111217;
+    border: 1px solid;
+    border-radius: 18px;
+    padding: 32px;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-headquartes h3 {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.main-headquartes h1 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.main-headquartes p {
+    color: #999999;
+    line-height: 1.6;
+    margin-bottom: 26px;
+}
+.infos-main-headquartes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    margin-bottom: 28px;
+}
+
+.infos-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #14151c;
+    border: 1px solid black;
+    color: white;
+}
+
+.btn-direction {
+    width: 100%;
+    padding: 14px 20px;
+    background: #7c3aed;
+    border: none;
+    border-radius: 999px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.explore-card {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #101117;
+    border-radius: 35px;
+    padding: 30px;
+    background-image: url(../../assets/images/Banner.png);
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.explore-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.images-left {
+    display: grid;
+    grid-template-rows: 280px 280px;
+    gap: 18px;
+}
+
+.images-right {
+    display: grid;
+    grid-template-rows: 280px auto;
+    gap: 14px;
+}
+
+.images-right-bottom {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 14px;
+}
+
+.images-right-bottom img {
+    width: 100%;
+    height: 140px;
+    border-radius: 16px;
+}
+
+.explore-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    display: block;
+}
+
+.text-bottom {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.explore-text my-icon {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.explore-text h2 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.explore-text p {
+    line-height: 1.7;
+    color: #c7c8d4;
+    max-width: 520px;
+}
+
+.images-bottom img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}

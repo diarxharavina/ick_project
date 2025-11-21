@@ -10,6 +10,7 @@
         <script src="../../components/icons/icons.js"></script>
         <script src="../../components/headerLogo/headerLogo.js"></script>
         <script src="../../components/button/button.js"></script>
+        <script src="../../components/footer/footer.js"></script>
         <script src="../../components/contactBanner/contactBanner.js"></script>
     </head>
     <body>
@@ -133,31 +134,113 @@
             <button class="tab">Regional</button>
             <button class="tab">International</button>
         </div>
-        #
 
-        <div>
-            <h3>Main Headquarters</h3>
-            <h1>123 Estatein Plaza, City Center, Metropolis</h1>
-            <p>
-                Our main headquarters serve as the heart of Estatein. Located in
-                the bustling city center, this is where our core team of experts
-                operates, driving the excellence and innovation that define us.
-            </p>
+        <section class="cards-locations">
+            <div class="main-headquartes">
+                <h3>Main Headquarters</h3>
+                <h1>123 Estatein Plaza, City Center, Metropolis</h1>
+                <p>
+                    Our main headquarters serve as the heart of Estatein.
+                    Located in the bustling city center, this is where our core
+                    team of experts operates, driving the excellence and
+                    innovation that define us.
+                </p>
 
-            <div>
-                <button>
-                    <my-icon iconName="email"></my-icon>
-                    info@estatein.com
-                </button>
-                <button>
-                    <my-icon iconName="phone"></my-icon>
-                    +1 (123) 456-7890
-                </button>
-                <button>
-                    <my-icon iconName="location"></my-icon>
-                    Metropolis
-                </button>
+                <div class="infos-main-headquartes">
+                    <span class="infos-content">
+                        <my-icon iconName="email1"></my-icon>
+                        info@estatein.com
+                    </span>
+                    <span class="infos-content">
+                        <my-icon iconName="phone1"></my-icon>
+                        +1 (123) 456-7890
+                    </span>
+                    <span class="infos-content">
+                        <my-icon iconName="location1"></my-icon>
+                        Metropolis
+                    </span>
+                </div>
+
+                <button class="btn-direction">Get Direction</button>
             </div>
-        </div>
+
+            <div class="main-headquartes">
+                <h3>Regional Offices</h3>
+                <h1>456 Urban Avenue, Downtown District, Metropolis</h1>
+                <p>
+                    Estatein's presence extends to multiple regions, each with
+                    its own dynamic real estate landscape. Discover our regional
+                    offices, staffed by local experts who understand the nuances
+                    of their respective markets.
+                </p>
+
+                <div class="infos-main-headquartes">
+                    <span class="infos-content">
+                        <my-icon iconName="email1"></my-icon>
+                        info@restatein.com
+                    </span>
+                    <span class="infos-content">
+                        <my-icon iconName="phone1"></my-icon>
+                        +1 (123) 628-7890
+                    </span>
+                    <span class="infos-content">
+                        <my-icon iconName="location1"></my-icon>
+                        Metropolis
+                    </span>
+                </div>
+
+                <button class="btn-direction">Get Direction</button>
+            </div>
+        </section>
+
+        <section class="explore-card">
+            <div class="explore">
+                <div class="explore-image">
+                    <div class="images-left">
+                        <img src="/assets/images/images1.png" alt="" />
+                        <img src="/assets/images/images2.png" alt="" />
+                    </div>
+
+                    <div class="images-right">
+                        <img
+                            src="/assets/images/images3.png"
+                            alt=""
+                            class="big"
+                        />
+                        <div class="images-right-bottom">
+                            <img
+                                src="/assets/images/images4.png"
+                                alt=""
+                                class="small"
+                            />
+                            <img
+                                src="/assets/images/images5.png"
+                                alt=""
+                                class="small"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-bottom">
+                    <div class="explore-text">
+                        <my-icon iconName="sparks"></my-icon>
+                        <h2>Explore Estatein's World</h2>
+                        <p>
+                            Step inside the world of Estatein, where
+                            professionalism meets warmth, and expertise meets
+                            passion. Our gallery offers a glimpse into our team
+                            and workspaces, inviting you to get to know us
+                            better.
+                        </p>
+                    </div>
+
+                    <div class="images-bottom">
+                        <img src="/assets/images/images6.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <coustom-footer></coustom-footer>
     </body>
 </html>
