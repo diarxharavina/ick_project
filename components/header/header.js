@@ -38,7 +38,7 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="../../pages/about">About Us</a></li>
                 <li><a href="../../pages/properties/index.html">Properties</a></li>
                 <li><a href="../../pages/services/index.html">Services</a></li>
-                <!-- <li><a href="#">Contact Us</a></li> -->
+                <li><a href="../../pages/contact/index.html">Contact Us</a></li>
             </ul>
             <custom-button type="dark-btn" name="Log In" onclick="location.href='../../pages/login/index.html'"></custom-button>
 
