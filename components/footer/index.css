@@ -10,8 +10,8 @@
     align-items: center;
     padding: 60px 180px;
     gap: 40px;
-    background-image: url(../../assets/images/Banner.png);
-    background-size: cover;
+    background-image: url(../../assets/images/footerBackground.png);
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
