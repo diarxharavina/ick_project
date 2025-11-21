@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../components/slider/index.css">
     <script src="../../components/header/header.js"></script>
     <script src="../../components/headerLogo/headerLogo.js"></script>
     <link rel="stylesheet" href="../../styles/global.css" />
     <script src="../../components/button/button.js"></script>
     <script src="../../components/icons/icons.js"></script>
     <script src="../../components/footer/footer.js"></script>
+    <script src="../../components/slider/slider.js"></script>
+    <script src="../../components/slider/faq/faqSlider.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -132,7 +135,7 @@
             </div>
         </div>
         <div class="interestedContainer">
-            <div>
+            <div class="interestedTitle">
                 <h1>
                     Inquire About Seaside Serenity Villa
                 </h1>
@@ -145,42 +148,42 @@
                     <form method="post" class="mainForm">
                         <div class="formRow">
                             <div class="questions">
-                                <label>Name</label>
+                                <label>First Name</label>
                                 <input class="inputTable"
                                     type="text"
                                     placeholder="Enter First Name"
                                 />
                             </div>
                             <div class="questions">
-                                <label>Name</label>
+                                <label>Last Name</label>
                                 <input class="inputTable"
                                     type="text"
-                                    placeholder="Enter First Name"
+                                    placeholder="Enter Last Name"
                                 />
                             </div>
                         </div>
                         <div class="formRow">
                             <div class="questions">
-                                <label>Name</label>
+                                <label>Email</label>
                                 <input class="inputTable"
                                     type="text"
-                                    placeholder="Enter First Name"
+                                    placeholder="Enter your Email"
                                 />
                             </div>
                             <div class="questions">
-                                <label>Name</label>
+                                <label>Phone</label>
                                 <input class="inputTable"
                                     type="text"
-                                    placeholder="Enter First Name"
+                                    placeholder="Enter Phone Number"
                                 />
                             </div>
                         </div>
                         <div class="budgetFormRow">
                             <div class="questions">
-                                <label>Budget</label>
+                                <label>Select Property</label>
                                 <input class="inputTable"
                                     type="text"
-                                    placeholder="Enter First Name"
+                                    placeholder="Seaside Serenity Villa, Malibu, California"
                                 />
                             </div>                
                         </div>       
@@ -196,7 +199,7 @@
                                 <input type="checkbox" />
                                 <label for="termsCheckbox">I agree with Terms of Use and Privacy Policy</label>
                             </div>
-                            <custom-button type="purple-btn" name="Send Your Message"></custom-button>
+                            <custom-button type="purple-btn" name="Send Message"></custom-button>
                         </div>  
                         </div>   
                     </form>               
@@ -221,7 +224,7 @@
                         $1,250,000
                     </h3>
                 </div>
-                <div>
+                <div class="detailsOnListingPriceMainContainer">
                 <div class="detailsOnListingPriceContainer">
                     <div class="additionalFeesContainer">
 
@@ -463,6 +466,11 @@
                 </div>
             </div>
         </div>
+        <custom-slider 
+            type="FAQ" 
+            title="Frequently Asked Questions" 
+            text="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
+        ></custom-slider>
     </div>
     <coustom-footer></coustom-footer>
 </body>

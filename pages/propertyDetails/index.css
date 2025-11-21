@@ -167,13 +167,26 @@ p{
     padding-left: 10px;
 }
 
-.interestedContainer{
+.interestedContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 150px;
     gap: 100px;
     color: white;
+    margin-top: 150px;
+}
+
+.interestedTitle {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.interestedTitle p{
+    color: #999999;
+}
+
+.interestedContainer .contactusContainer {
+    width: 70%;
 }
 
 .mainFormContainer{
@@ -192,9 +205,12 @@ p{
 .formRow{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
+}
+
+.formRow > .questions {
+    width: 50%;
 }
 
 .questions{
@@ -206,18 +222,15 @@ p{
 }
 
 .inputTable{
-    height: 68px;
     background-color: #1A1A1A;
     color: #666666;
-    padding: 24px 20px 24px 20px;
+    padding: 14px 20px 14px 20px;
     border: solid 1px #262626;
     border-radius: 8px;
 }
 
-.budgetFormRow{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+.budgetFormRow {
+    display: block;
 }
 
 .contactMethod{
@@ -234,7 +247,7 @@ p{
 }
 
 .messageInputTable{
-    height: 170px;
+    height: 140px;
     width: 100%;
     background-color: #1A1A1A;
     color: #666666;
@@ -299,6 +312,12 @@ p{
     flex-direction: row;
     justify-content: space-between;
     color: white;
+}
+
+.detailsOnListingPriceMainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .detailsOnListingPriceContainer {
