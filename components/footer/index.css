@@ -35,18 +35,6 @@
     font-size: 1rem;
 }
 
-.btn {
-    color: white;
-    border: none;
-    border-radius: 12px;
-    background-color: #703bf7;
-    width: 190px;
-    height: 55px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-}
-
 .footer-main {
     display: flex;
     justify-content: space-between;

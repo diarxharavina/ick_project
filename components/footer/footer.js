@@ -22,7 +22,7 @@ class FooterComponent extends HTMLElement {
                     </p>
                 </div>
 
-                <button class="btn">Explore Properties</button>
+                <custom-button type="purple-btn btn" name="Explore Properties"></custom-button>
             </div>
 
             <div class="footer-main">
