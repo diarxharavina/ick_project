@@ -60,6 +60,39 @@
     anchor-name: --carousel;
 }
 
+.faq-carousel {
+    width: 100%;
+    overflow-x: auto;
+    margin: 3rem auto;
+    display: flex;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    anchor-name: --faq-carousel;
+}
+
+.testimonials-carousel {
+    width: 100%;
+    overflow-x: auto;
+    margin: 3rem auto;
+    display: flex;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    anchor-name: --testimonials-carousel;
+}
+
+.properties-carousel {
+    width: 100%;
+    overflow-x: auto;
+    margin: 3rem auto;
+    display: flex;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    anchor-name: --properties-carousel;
+}
+
 .carousel::-webkit-scrollbar {
     display: none;
 }
@@ -88,6 +121,88 @@
     opacity: 0.2;
     cursor: auto;
 }
+
+.properties-carousel::scroll-button(right), 
+.properties-carousel::scroll-button(left) {
+    content: '➜';
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--gray);
+    border: 1px solid #262626;
+    border-radius: 50%;
+    color: var(--white);
+    position: fixed;
+    position-anchor: --properties-carousel;
+    position-area: right center;
+}
+
+.properties-carousel::scroll-button(left) {
+    content: '➜';
+    transform: scaleX(-1);
+    position-area: left center;
+}
+
+.properties-carousel::scroll-button(right):disabled, 
+.properties-carousel::scroll-button(left):disabled {
+    opacity: 0.2;
+    cursor: auto;
+}
+
+.faq-carousel::scroll-button(right), 
+.faq-carousel::scroll-button(left) {
+    content: '➜';
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--gray);
+    border: 1px solid #262626;
+    border-radius: 50%;
+    color: var(--white);
+    position: fixed;
+    position-anchor: --faq-carousel;
+    position-area: right center;
+}
+
+.faq-carousel::scroll-button(left) {
+    content: '➜';
+    transform: scaleX(-1);
+    position-area: left center;
+}
+
+.faq-carousel::scroll-button(right):disabled, 
+.faq-carousel::scroll-button(left):disabled {
+    opacity: 0.2;
+    cursor: auto;
+}
+
+.testimonials-carousel::scroll-button(right), 
+.testimonials-carousel::scroll-button(left) {
+    content: '➜';
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--gray);
+    border: 1px solid #262626;
+    border-radius: 50%;
+    color: var(--white);
+    position: fixed;
+    position-anchor: --testimonials-carousel;
+    position-area: right center;
+}
+
+.testimonials-carousel::scroll-button(left) {
+    content: '➜';
+    transform: scaleX(-1);
+    position-area: left center;
+}
+
+.testimonials-carousel::scroll-button(right):disabled, 
+.testimonials-carousel::scroll-button(left):disabled {
+    opacity: 0.2;
+    cursor: auto;
+}
+
 
 .carousel-item-properties {
     scroll-snap-align: start;
