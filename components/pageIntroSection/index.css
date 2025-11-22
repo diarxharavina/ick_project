@@ -1,0 +1,28 @@
+.findYourDreamPropertyContainer{
+    width: 100vw;
+    height: 450px;
+    background: linear-gradient(to right, #262626, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 162px;        
+    padding-right: 400px;
+    border-bottom: #262626 solid 1px;
+}
+
+.findYourDreamPropertyContainerH1{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 150%;
+    letter-spacing: 0; 
+    margin-top: 150px;
+    color: white;
+}
+
+.findYourDreamPropertyContainerP{ 
+    font-weight: 500;
+    font-size: 1.125rem; 
+    line-height: 150%;
+    color: #999999;
+}
