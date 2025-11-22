@@ -98,7 +98,7 @@ class LoginComponent extends HTMLElement {
                         font-size:14px;
                     "></div>
 
-                    <button type="submit" class="btn">Log In</button>
+                    <button type="submit" class="purple-btn btn">Log In</button>
                 </form>
             </div>
         `;
@@ -174,7 +174,7 @@ class LoginComponent extends HTMLElement {
                         font-size:14px;
                     "></div>
 
-                    <button type="submit" class="btn">Sign Up</button>
+                    <button type="submit" class="purple-btn btn">Sign Up</button>
                 </form>
             </div>
         `;
