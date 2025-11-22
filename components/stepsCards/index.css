@@ -1,0 +1,27 @@
+.stepCardBox{
+    width: 380px;
+    height: 329px;
+}
+
+.stepCardNumber{ 
+    padding: 16px 20px 16px 20px;
+    border-left: solid 1px #262626;
+}
+
+.stepCardDetails{
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    border-top-left-radius: 0%;
+}
+
+.stepCardDetails p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    font-weight: 400;
+}
