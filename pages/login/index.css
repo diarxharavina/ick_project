@@ -1,3 +1,10 @@
+.login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
 .login-container {
     display: flex;
     flex-direction: column;
@@ -6,7 +13,7 @@
     border-radius: 12px;
     border: 1px solid #262626;
     width: 800px;
-    padding: 36px;
+    padding: 48px;
     gap: 50px;
 }
 
@@ -16,6 +23,7 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .login-container h2 {
@@ -27,11 +35,15 @@
     color: var(--white);
     width: 50%;
     font-size: 1.125rem;
-    background-color: var(--purple);
+    background-color: var(--background);
     text-align: center;
     padding: 12px 24px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+}
+
+.login-btn.active {
+    background-color: var(--purple);
 }
 
 .signup-btn {
@@ -44,6 +56,10 @@
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     border: 1px solid #262626;
+}
+
+.signup-btn.active {
+    background-color: var(--purple);
 }
 
 .login-form {
@@ -85,6 +101,108 @@
 }
 
 .submit-login-btn {
+    width: 100%;
+    padding: 24px;
+    font-size: 1.5rem;
+    background: var(--purple);
+    opacity: 0.5;
+    border: none;
+    border-radius: 12px;
+    cursor: auto;
+}
+
+
+
+
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    width: 800px;
+    padding: 48px;
+    gap: 50px;
+}
+
+.register-register-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.register-container h2 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.register-btn {
+    color: var(--white);
+    width: 50%;
+    font-size: 1.125rem;
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    text-align: center;
+    padding: 12px 24px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.signup-btn {
+    width: 50%;
+    color: var(--white);
+    font-size: 1.125rem;
+    background-color: var(--background);
+    text-align: center;
+    padding: 12px 24px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: 1px solid #262626;
+}
+
+.register-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.register-form label {
+    font-size: 1rem;
+    color: #999999;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #262626;
+    background-color: var(--background);
+    color: var(--white);
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.submit-register-btn {
     width: 100%;
     padding: 24px;
     font-size: 1.5rem;
