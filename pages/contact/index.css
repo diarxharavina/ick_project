@@ -237,86 +237,97 @@ textarea {
     font-weight: 600;
     cursor: pointer;
 }
-
 .explore-card {
-    max-width: 1200px;
-    margin: 50px auto;
-    background: #101117;
-    border-radius: 35px;
-    padding: 30px;
-    background-image: url(../../assets/images/Banner.png);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
 }
 
 .explore {
+    max-width: 1180px;
+    width: 100%;
+    background: #111;
+    border-radius: 24px;
+    border: 1px solid #262626;
+    padding: 32px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
+    overflow: hidden;
 }
-
 .explore-image {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    gap: 16px;
 }
-
 .images-left {
-    display: grid;
-    grid-template-rows: 280px 280px;
-    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
 }
 
 .images-right {
-    display: grid;
-    grid-template-rows: 280px auto;
-    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
 }
 
 .images-right-bottom {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 14px;
+    display: flex;
+    gap: 16px;
 }
 
-.images-right-bottom img {
+.explore-image img,
+.images-bottom img {
     width: 100%;
-    height: 140px;
     border-radius: 16px;
+    object-fit: cover;
 }
 
-.explore-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 18px;
-    display: block;
+.big {
+    height: 158px;
+}
+
+.small {
+    height: 158px;
+}
+
+.images-left img {
+    height: 158px;
+}
+.images-bottom img {
+    height: 200px;
 }
 
 .text-bottom {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 28px;
+    display: flex;
+    gap: 24px;
     align-items: center;
 }
 
-.explore-text my-icon {
-    display: inline-block;
-    margin-bottom: 8px;
-    font-size: 22px;
+.explore-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 16px;
 }
 
 .explore-text h2 {
+    font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 12px;
-    color: white;
+    color: #ffffff;
 }
 
 .explore-text p {
+    font-size: 0.95rem;
     line-height: 1.7;
-    color: #c7c8d4;
-    max-width: 520px;
+    color: #c4c4c4;
+    max-width: 28rem;
 }
 
-.images-bottom img {
-    width: 100%;
-    height: 100%;
-    border-radius: 18px;
+.images-bottom {
+    flex: 1;
 }
