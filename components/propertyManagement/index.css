@@ -51,3 +51,25 @@
     font-weight: 600;
     color: #ffffff;
 }
+
+@media (max-width: 1000px) {
+    .property-management {
+        grid-template-columns: 1fr;
+        padding: 40px 16px;
+    }
+
+    .property-management-feature--wide {
+        grid-column: span 1;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .property-management-feature {
+        padding: 24px;
+    }
+
+    .property-management-wide-text h1 {
+        font-size: 20px;
+    }
+}
