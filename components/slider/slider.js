@@ -25,7 +25,7 @@ class Component extends HTMLElement {
                         ></custom-button>
                     </div>
                 </div>
-                <${type.toLowerCase()}-slider class="carousel"></${type.toLowerCase()}-slider>
+                <${type.toLowerCase()}-slider class="carousel ${type.toLowerCase()}-carousel"></${type.toLowerCase()}-slider>
                 <div class="slider-number">
                     <p>
                         <strong>01</strong>
