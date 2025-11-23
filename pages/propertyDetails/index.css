@@ -88,6 +88,7 @@
 }
 
 .descriptionContainer{
+    height: 100%;
     width: 50%;
     border-radius: 12px;
     border: 1px solid #262626;
@@ -99,6 +100,11 @@
     padding-bottom: 50px;
     border-bottom: 1px solid #262626;
     margin-top: 14px;
+    color: #999999;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 .specificsContainer{
@@ -113,11 +119,27 @@
 .specificsOnDescription{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.specificsOnDescription:not(:last-child) {
+    border-right: 1px solid #262626;
+    padding-right: 40px;
 }
 
 .iconAndNameContainer{
     display: flex;
     flex-direction: row;
+    gap: 6px;
+    color: #999999;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 .keyAndFeaturesContainer{
@@ -156,15 +178,21 @@ p{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-self: flex-start;
 }
 
 .detailsOnFeatures{
-    background: linear-gradient(to right, #1A1A1A 100%, transparent);
+    background: linear-gradient(to right, #1A1A1A, transparent);
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-self: center;
+    align-items: center;
     border-left: 1px solid #703BF7;
-    padding-left: 10px;
+    padding-left: 27px;
+    color: #999999;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .interestedContainer {
@@ -289,6 +317,26 @@ p{
     padding-right: 150px;
 }
 
+.values-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.values-text h1 {
+    font-size: 2.4rem;
+    color: var(--white);
+    line-height: 1.3;
+}
+
+.values-text p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #999999;
+    margin-bottom: 80px;
+}
+
 .notesContainer{
     color: white;
     display: flex;
@@ -314,7 +362,12 @@ p{
     color: white;
 }
 
+.listingPriceText{
+    width: 20%;
+}
+
 .detailsOnListingPriceMainContainer{
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -343,21 +396,18 @@ p{
     font-weight: 600;
 }
 
-.additionalFeesText button {
-    background: #222;
-    border: 1px solid #262626;
-    padding: 6px 18px;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-}
-
 .feesRow {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid #262626;
     padding: 25px 0;
     gap: 40px;
+}
+
+.feeBox{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .feeBox p {
@@ -367,6 +417,12 @@ p{
 .feeTitle {
     color: #999;
     font-size: 15px;
+}
+
+.runOutOfNamesDIV{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }
 
 .feeValue {
@@ -381,7 +437,7 @@ p{
     padding: 6px 14px;
     border-radius: 18px;
     font-size: 13px;
-    color: #aaa;
+    color: #999999;
     display: inline-block;
 }
 
