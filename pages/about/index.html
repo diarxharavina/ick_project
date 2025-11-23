@@ -12,6 +12,8 @@
         <script src="../../components/headerLogo/headerLogo.js"></script>
         <script src="../../components/button/button.js"></script>
         <script src="../../components/stepsCards/index.js"></script>
+        <script src="../../components/teamMemberCard/index.js"></script>
+        <script src="../../components/footer/footer.js"></script>
 
     </head>
     <body>
@@ -145,7 +147,7 @@
                 </div>
             </div>
             <div class="navigatingTheEstateinExperienceSection">
-                <div class="achievements-header">
+                <div class="title-text">
                     <my-icon iconName="sparks"></my-icon>
                     <h1>Navigating the Estatein Experience</h1>
                     <p>
@@ -190,6 +192,38 @@
                     ></step-card>
                 </div>
             </div>
+            <div class="meetTheTeamSection">
+                <div class="title-text">
+                    <my-icon iconName="sparks"></my-icon>
+                    <h1>Meet the Estatein Team</h1>
+                    <p>
+                        At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.
+                    </p>
+                </div>
+                <div class="allMembers">
+                    <team-card 
+                        name="Max Mitchell" 
+                        role="Founder" 
+                        image="C:\Users\PC\ick_project\assets\images\teamMember1.png">
+                    </team-card>
+                    <team-card 
+                        name="Sarah Johnson" 
+                        role="Chief Real Estate Officer" 
+                        image="C:\Users\PC\ick_project\assets\images\teamMember2.png">
+                    </team-card>
+                    <team-card 
+                        name="David Brown" 
+                        role="Head of Property Management" 
+                        image="C:\Users\PC\ick_project\assets\images\teamMember3.png">
+                    </team-card>
+                    <team-card 
+                        name="Michael Turner" 
+                        role="Legal Counsel" 
+                        image="C:\Users\PC\ick_project\assets\images\teamMember4.png">
+                    </team-card>
+                </div>
+            </div>
         </div>
+        <custom-footer></custom-footer>
     </body>
 </html>

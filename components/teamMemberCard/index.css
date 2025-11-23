@@ -1,0 +1,76 @@
+.teamCard {
+    width: 275px;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #262626;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.twitterIcon {
+    width: 60px;
+    height: 60px;
+    background: #7b3cff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+}
+
+.twitterIcon img {
+    width: 28px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 1.375rem;
+}
+
+.role {
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+.helloBox {
+    background: #1A1A1A;
+    padding: 15px 18px;
+    border-radius: 40px;
+    border: 1px solid #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.helloBox span {
+    font-size: 0.9375rem;
+    color: #999999;
+}
+
+.sendIcon {
+    width: 40px;
+    height: 40px;
+    background: #7b3cff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendIcon img {
+    width: 22px;
+}
