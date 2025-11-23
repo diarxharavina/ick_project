@@ -9,6 +9,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 162px;
+    padding-right: 162px;
 }
 
 .searchForAPropertyContainer{
@@ -23,13 +25,18 @@
 
 .searchBarContainer{
     height: 103px;
-    background-color: transparent;
+    width: 1000px;
+    background-color: #1A1A1A;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: solid #1A1A1A 10px;
 }
 
 .searchBar{
+    width: 100%;
     height: 103px;
     background-color: #141414;
     display: flex;
@@ -39,7 +46,7 @@
     padding: 20px 20px 20px 24px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    border: solid #1A1A1A 10px;
+    border: solid #262626 1px;
     gap: 50px;
 }
 
@@ -55,28 +62,9 @@
     letter-spacing: 0;
 }
 
-.searchButton{
-    height: 63px;
-    background-color: #703BF7;
-    border-radius: 10px;
-    border-style: none;
-    color: white;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.125rem;
-    line-height: 150%;
-    letter-spacing: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-
 .searchFiltersContainer{
+    margin-left: 162px;
+    margin-right: 162px;
     height: 92px;
     background-color: #1A1A1A;
     display: flex;
@@ -97,7 +85,7 @@
     background-color: #141414;
     color: #999999;
     border-radius: 12px;
-    padding: 22.5px 20px 22.5px 20px;
+    padding: 22.5px 15px 22.5px 15px;
     gap:0px;
 }
 
@@ -219,6 +207,26 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
+}
+
+.letsMakeItHappenHeader {
+    max-width: 1200px;
+    margin-left: 162px;
+    margin-right: 162px;
+    margin-bottom: 2.5rem;
+}
+
+.letsMakeItHappenHeader h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.letsMakeItHappenHeader p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #c4c4c4;
 }
 
 .mainFormContainer{
@@ -352,8 +360,5 @@
 }
 
 
-/*use rem*/
-/*create and use components*/
-/*width?*/
-/*icons*/
-/*search for a property should be input*/
+
+

@@ -35,12 +35,7 @@
                         class="searchInput" 
                         placeholder="Search For A Property"
                     />
-                    <button class="searchButton">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.75 18.75L13.5533 13.5533M13.5533 13.5533C14.9105 12.1961 15.75 10.3211 15.75 8.25C15.75 4.10786 12.3921 0.75 8.25 0.75C4.10786 0.75 0.75 4.10786 0.75 8.25C0.75 12.3921 4.10786 15.75 8.25 15.75C10.3211 15.75 12.1961 14.9105 13.5533 13.5533Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Find Property
-                    </button>
+                    <custom-button type="purple-btn" name="Find Property"></custom-button>
                 </div>
             </div>
             <div class="searchFiltersContainer">
@@ -109,6 +104,13 @@
                 title="Featured Properties" 
                 text='Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.'
         ></custom-slider>   
+        <div class="letsMakeItHappenHeader">
+            <my-icon iconName="sparks"></my-icon>
+            <h1>Let's Make it Happen</h1>
+            <p>
+                Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together.
+            </p>
+        </div>
         <div class="mainFormContainer">
             <form method="post" class="mainForm">
                 <div class="formRow">
@@ -164,10 +166,10 @@
                         />
                     </div>
                     <div class="questions">
-                        <label>Name</label>
+                        <label>No. of Bathrooms</label>
                         <input class="inputTable"
                             type="text"
-                            placeholder="Enter First Name"
+                            placeholder="Select no. of Bathrooms"
                         />
                     </div>
                 </div>
@@ -214,6 +216,6 @@
             </form>               
         </div>
     </div>
-    <coustom-footer></coustom-footer>
+    <custom-footer></custom-footer>
 </body>
 </html>
