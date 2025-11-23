@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-boxs;
+    box-sizing: border-box;
 }
 
 .footer1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 180px;
+    padding: 60px 162px;
     gap: 40px;
     background-image: url(../../assets/images/footerBackground.png);
     background-size: contain;
@@ -41,7 +41,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 100px;
-    padding: 80px 180px;
+    padding: 80px 162px;
     background: #050505;
 }
 
@@ -130,7 +130,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 180px;
+    padding: 25px 162px;
     background: #050505;
     border-top: 1px solid #1a1a1a;
 }
