@@ -39,6 +39,7 @@
         flex-wrap: wrap;
         justify-content: center;
         border-radius: 12px;
+        margin-bottom: 3rem;
     }
     .service-box{
         width: 45%;
