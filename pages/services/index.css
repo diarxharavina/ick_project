@@ -10,13 +10,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 60px;
-    margin-block: 150px;
+    padding: 150px 400px 100px 162px;
 }
 
 .services-hero-text {
     display: flex;
-    gap: 18px;
+    gap: 14px;
     justify-content: flex-start;
     flex-direction: column;
 }
@@ -32,7 +31,7 @@
 
 .services-hero-text p {
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 150%;
     color: #999999;
@@ -52,8 +51,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 15px;
-    margin-block: 80px;
-    padding-inline: 150px;
+    padding: 90px 100px 90px 162px;
 }
 .property-value-text {
     display: flex;
@@ -68,8 +66,8 @@
     color: white;
 }
 .property-value-text p {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 150%;
     color: #999999;
 }
@@ -92,7 +90,7 @@
 }
 .property-management-text {
     display: flex;
-    gap: 18px;
+    gap: 1px;
     justify-content: flex-start;
     flex-direction: column;
 }
@@ -103,8 +101,8 @@
     color: white;
 }
 .property-management-text p {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 150%;
     color: #999999;
 }
@@ -122,21 +120,20 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 0 0 40%;
+    flex: 0 0 45%;
 }
 
 .investments-content h1 {
     font-weight: 600;
     font-size: 48px;
     color: white;
-    line-height: 120%;
+    line-height: 150%;
 }
 
 .investments-content p {
     color: #999999;
     max-width: 150%;
-    width: 100%;
-    max-width: 340px;
+    font-size: 18px;
 }
 
 .investments-potencial-section {
@@ -144,27 +141,24 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #222;
-    border-radius: 14px;
-    padding: 28px;
-    margin-top: 20px;
-    max-width: 380px;
+    border-radius: 12px;
+    padding: 50px;
 }
 
 .investments-potencial-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     color: #ffffff;
-    text-align: left;
 }
 
 .investments-potencial-content h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .investments-potencial-content p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     color: #c5c6c7;
     max-width: 300px;
@@ -173,10 +167,87 @@
     background-color: #000000;
     color: white;
     border: 1px solid #262626;
-    border-radius: 999px;
+    border-radius: 10px;
     width: 100%;
-    padding: 14px 0;
+    padding: 18px 24px 18px 24px;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .services-hero-content {
+        padding: 120px 60px 80px 60px;
+        align-items: flex-start;
+    }
+
+    .services-hero-text h1 {
+        font-size: 40px;
+    }
+
+    .services-hero-text p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .property-value-content {
+        padding: 70px 60px 70px 60px;
+    }
+
+    .property-value-text h1 {
+        font-size: 40px;
+    }
+
+    .property-value-text p {
+        font-size: 16px;
+    }
+
+    .property-management-content {
+        padding-inline: 60px;
+    }
+
+    .property-management-text h1 {
+        font-size: 40px;
+    }
+
+    .property-management-text p {
+        font-size: 16px;
+    }
+    .investments-section {
+        padding-inline: 60px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .investments-content {
+        flex: 1 1 100%;
+    }
+
+    .investments-content h1 {
+        font-size: 40px;
+    }
+
+    .investments-content p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .investments-potencial-section {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .investments-potencial-content h2 {
+        font-size: 20px;
+    }
+
+    .investments-potencial-content p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .btn-learn-more {
+        font-size: 15px;
+        padding: 16px;
+    }
 }
