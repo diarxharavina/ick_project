@@ -7,6 +7,10 @@
     padding-block: 75px;
 }
 
+section{
+    max-width: 90vw;
+}
+
 .slider-header {
     position: relative;
     display: flex;
@@ -206,7 +210,7 @@
 
 .carousel-item-properties {
     scroll-snap-align: start;
-    flex: 0 0 25.5rem;
+    flex: 0 0 32.5%;
     overflow: hidden;
     background-color: var(--purple);
     padding: 25px;
@@ -324,7 +328,7 @@
 
 .carousel-item-faq {
     scroll-snap-align: start;
-    flex: 0 0 25.5rem;
+    flex: 0 0 32.5%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -349,7 +353,7 @@
 
 .carousel-item-testimonials {
     scroll-snap-align: start;
-    flex: 0 0 25.5rem;
+    flex: 0 0 32.5%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -399,4 +403,36 @@
 .testimonials-user-info p {
     color: #999999;
     font-size: 1.125rem;
+}
+
+@media (max-width: 1310px) {
+    .carousel-item-properties{
+        flex: 0 0 50%;
+    }
+    .carousel-item-faq{
+        flex: 0 0 50%;
+    }
+    .carousel-item-testimonials{
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    section{
+        max-width: 85vw;
+    }
+    .carousel-item-properties{
+        flex: 0 0 100%;
+    }
+    .carousel-item-faq{
+        flex: 0 0 100%;
+    }
+    .carousel-item-testimonials{
+        flex: 0 0 100%;
+    }
+    .sparks {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    }
 }
