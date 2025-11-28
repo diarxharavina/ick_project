@@ -13,7 +13,9 @@ const onSubmit = async e => {
         });
         const data = await response.json();
 
-        if (!response.ok) return
+
+
+        if (!response.ok) return;
 
         localStorage.setItem('accessToken', data.accessToken);
         localStorage.setItem('refreshToken', data.refreshToken);
@@ -34,9 +36,38 @@ const getCurrentUser = async () => {
         if (!response.ok) return;
 
         const res = await response.json();
-        
+
         console.log(res);
     } catch (error) {
-        console.log('error');
+        console.error(error.message);
+    }
+};
+
+const handleRefreshAuth = async () => {
+    try {
+        const refreshToken = localStorage.getItem('refreshToken');
+        if (!refreshToken) return false;
+
+        const response = await fetch('https://dummyjson.com/auth/refresh', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                refreshToken: refreshToken,
+                expiresInMins: 30,
+            }),
+        });
+
+        if (!response.ok) return false;
+
+        const data = await response.json();
+
+        localStorage.setItem('accessToken', data.accessToken);
+        localStorage.setItem('refreshToken', data.refreshToken);
+
+        return true;
+
+    } catch (error) {
+        console.error("Refresh failed:", error.message);
+        return false;
     }
 };

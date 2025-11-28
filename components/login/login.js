@@ -18,7 +18,7 @@ class LoginComponent extends HTMLElement {
                 <form onsubmit="onSubmit(event)" class="login-form">
                     <div class="field">
                         <label>Email address</label>
-                        <input type="email" />
+                        <input type="text" />
                     </div>
 
                     <div class="field">
