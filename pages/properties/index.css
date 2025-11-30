@@ -23,6 +23,7 @@ p{
 
 .searchForAPropertyContainer{   
     height: 205px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,6 +93,7 @@ p{
 }
 
 .leftContainerInFilters{
+    width: 100%;
     display: flex;
     gap: 10px;
 }
@@ -112,24 +114,20 @@ p{
 }
 
 .letsMakeItHappenHeader {
-    margin-bottom: 2.5rem;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .letsMakeItHappenHeader h1 {
     font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
+    font-weight: 600; 
     color: white;
 }
 
-.letsMakeItHappenHeader p {
-    font-size: 0.9rem;
-    line-height: 1.8;
-    color: #c4c4c4;
-}
-
-.mainFormContainer{
-    margin-top: 80px;  
+.mainFormContainer{ 
+    width: 100%;
     margin-bottom: 150px;
     border: 1px solid #262626;
     border-radius: 12px;
@@ -159,9 +157,7 @@ p{
 
 .inputTable{
     background-color: #1A1A1A;
-    color: #666666;
     padding: 14px 20px 14px 20px;
-    /*padding: 24px 20px 24px 20px;*/
     border: solid 1px #262626;
     border-radius: 8px;
 }
@@ -196,7 +192,6 @@ p{
     height: 170px;
     width: 100%;
     background-color: #1A1A1A;
-    color: #666666;
     padding: 24px 20px 24px 20px;
     border: solid 1px #262626;
     border-radius: 8px;
@@ -231,30 +226,6 @@ p{
     color: #4C4C4C;
 }
 
-.startYourRealEstateJourneyToday{
-    width: 100vw;
-    height: 367px;
-    padding-left: 162px;
-    padding-right: 162px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 250px;
-    border-top: solid 1px #262626;
-    border-bottom: solid 1px #262626;
-}
-
-.startYourRealEstateJourneyToday h1{
-    color: white;
-    margin-bottom: 14px;
-}
-
-.startYourRealEstateJourneyToday p{
-    color: #999999;
-    width: 750px;
-}
 
 
 
