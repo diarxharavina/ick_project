@@ -1,24 +1,32 @@
 const onSubmit = async e => {
     e.preventDefault();
 
+    const form = event.target;
+
+    const username = form.username.value;
+    const password = form.password.value;
+
+    console.log("Username:", username);
+    console.log("Password:", password);
+
     try {
         const response = await fetch('https://dummyjson.com/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                username: 'emilys',
-                password: 'emilyspass',
+                username: username,
+                password: password,
                 expiresInMins: 30, // optional, defaults to 60
             }),
         });
         const data = await response.json();
 
-
-
         if (!response.ok) return;
 
         localStorage.setItem('accessToken', data.accessToken);
         localStorage.setItem('refreshToken', data.refreshToken);
+
+        window.location.href = '/pages/home';
     } catch (error) {
         console.error(error.message);
     }
@@ -40,6 +48,16 @@ const getCurrentUser = async () => {
         console.log(res);
     } catch (error) {
         console.error(error.message);
+    }
+};
+
+const isLoggedIn = async () => {
+    try {
+        if (!getCurrentUser()) return false;
+
+        return true;
+    } catch (error) {
+        console.error(erorr.message);
     }
 };
 
@@ -65,9 +83,8 @@ const handleRefreshAuth = async () => {
         localStorage.setItem('refreshToken', data.refreshToken);
 
         return true;
-
     } catch (error) {
-        console.error("Refresh failed:", error.message);
+        console.error('Refresh failed:', error.message);
         return false;
     }
 };

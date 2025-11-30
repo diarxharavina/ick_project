@@ -8,7 +8,7 @@ class Component extends HTMLElement {
         const text = this.getAttribute('text');
 
         this.innerHTML = `
-       <section>
+       <section class="slider-wrapper">
             <div class="slider-section container">
                 <div class="slider-header">
                     <my-icon iconName="sparks" class="sparks"></my-icon>
