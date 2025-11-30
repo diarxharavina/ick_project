@@ -7,10 +7,6 @@
     padding-block: 75px;
 }
 
-section{
-    max-width: 90vw;
-}
-
 .slider-header {
     position: relative;
     display: flex;
@@ -418,8 +414,8 @@ section{
 }
 
 @media (max-width: 1000px) {
-    section{
-        max-width: 85vw;
+    .slider-wrapper{
+        width: 85vw;
     }
     .carousel-item-properties{
         flex: 0 0 100%;
@@ -431,8 +427,6 @@ section{
         flex: 0 0 100%;
     }
     .sparks {
-    position: absolute;
-    top: -40px;
-    left: -40px;
+    display: none;
     }
 }

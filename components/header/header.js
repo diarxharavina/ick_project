@@ -3,6 +3,16 @@ class HeaderComponent extends HTMLElement {
         this.render();
     }
     render() {
+
+        const isLoggedIn = () =>{
+            console.log(localStorage.getItem("accessToken"))
+            return !!localStorage.getItem("accessToken");
+        }
+
+        window.logOut = () => {
+            localStorage.removeItem("accessToken");
+        }
+
         window.openMenu = () => {
             window.document
                 .querySelector('.mobileHeader .nav-links')
@@ -40,7 +50,12 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="../../pages/services/index.html">Services</a></li>
                 <li><a href="../../pages/contact/index.html">Contact Us</a></li>
             </ul>
-            <custom-button type="dark-btn" name="Log In" onclick="location.href='../../pages/login/index.html'"></custom-button>
+            ${isLoggedIn() 
+                ? `<a href="../../pages/login/index.html"><custom-button type="dark-btn" name="Log out" onclick="logOut()"></custom-button></a>`
+                : `
+                        <a href="../../pages/login/index.html"><custom-button type="purple-btn" name="Log In"></custom-button></a>
+                    `
+            }
 
         </nav>
 
@@ -54,7 +69,12 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="../../pages/properties/index.html">Properties</a></li>
                 <li><a href="../../pages/services/index.html">Services</a></li>
                 <li>
-                <custom-button type="dark-btn" name="Log In"><a href="../../pages/login/index.html"></a></custom-button>
+                ${isLoggedIn() 
+                ? `<custom-button type="dark-btn" name="Log out" onclick="logOut()"><a href="../../pages/login/index.html"></a></custom-button>`
+                : `<custom-button type="purple-btn" name="Log In">
+                        <a href="../../pages/login/index.html"></a>
+                    </custom-button>`
+                }
                 </li>
                 <my-icon iconName="burger" onclick="closeMenu()" class="closeMenu"></my-icon>
             </ul>

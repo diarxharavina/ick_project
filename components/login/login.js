@@ -17,13 +17,13 @@ class LoginComponent extends HTMLElement {
 
                 <form onsubmit="onSubmit(event)" class="login-form">
                     <div class="field">
-                        <label>Email address</label>
-                        <input type="text" />
+                        <label>Username</label>
+                        <input type="text" name="username" />
                     </div>
 
                     <div class="field">
                         <label>Password</label>
-                        <input type="password" />
+                        <input type="password" name="password" />
                     </div>
 
                     <div class="error-box" style="
@@ -35,8 +35,6 @@ class LoginComponent extends HTMLElement {
 
                     <button type="submit" class="submit-login-btn btn">Log In</button>
                 </form>
-                    <button onclick="getCurrentUser()" type="submit" class="submit-login-btn btn">Log In</button>
-
             </div>
         `;
 
@@ -93,7 +91,6 @@ class LoginComponent extends HTMLElement {
 
         this.querySelector(".login-btn")
             .addEventListener("click", () => this.renderLogin());
-
     }
 }
 
