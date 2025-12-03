@@ -1,27 +1,34 @@
-.findYourDreamPropertyContainer{
-    width: 100vw;
+.findYourDreamPropertyContainer {
+    width: 100%;
+    max-width: 100%;
     height: 450px;
     background: linear-gradient(to right, #262626, transparent);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 14px;
-    padding-left: 162px;        
-    padding-right: 162px;
+    padding-inline: 162px;
     border-bottom: #262626 solid 1px;
-    
+    box-sizing: border-box;
 }
 
-.findYourDreamPropertyContainerH1{
+.findYourDreamPropertyContainerH1 {
     font-weight: 600;
     font-size: 3rem;
     line-height: 150%;
     color: white;
 }
 
-.findYourDreamPropertyContainerP{ 
+.findYourDreamPropertyContainerP { 
     font-weight: 500;
     font-size: 1.125rem; 
     line-height: 150%;
     color: #999999;
+}
+
+@media (max-width: 600px) {
+    .findYourDreamPropertyContainer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

@@ -14,12 +14,12 @@ p{
     line-height: 150%;
     color: #999999;
 }
-
+/*
 .vlera{
     width: 1530px;
     height: 100px;
     background-color: lightblue;
-}
+}*/
 
 .searchForAPropertyContainer{   
     height: 205px;
@@ -33,7 +33,7 @@ p{
 }
 
 .searchBarContainer{
-    width: 1000px;
+    width: 80%;
     background-color: #1A1A1A;
     display: flex;
     flex-direction: row;
@@ -43,6 +43,7 @@ p{
     border-top-right-radius: 12px;
     padding: 10px;
     padding-bottom: 0px;
+    min-width: fit-content;
 }
 
 .searchBar{
@@ -57,6 +58,7 @@ p{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border: solid #262626 1px;
+    min-width: fit-content;
 }
 
 .searchInput{
@@ -70,6 +72,8 @@ p{
     line-height: 150%;
 }
 
+/*at 762px the button should change*/
+
 .searchFiltersContainer{
     background-color: #1A1A1A;
     display: flex;
@@ -79,6 +83,7 @@ p{
     gap: 10px;
     border-radius: 12px;
     padding: 10px;
+    min-width: fit-content;
 }
 
 .filterNo1{
@@ -224,6 +229,68 @@ p{
 
 .termsContainer label{
     color: #4C4C4C;
+}
+
+@media (max-width: 600px) {
+  .searchBarContainer {
+    min-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    padding-bottom: 10px;
+    margin-top: 500px;
+  }
+  .searchBar{
+    border-radius: 12px;
+    }
+  .searchFiltersContainer {
+    flex-direction: column;
+    min-width: 400px;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 20px; 
+  }
+
+  .filterNo1 {
+    width: 100%;
+  }
+  .mainFormContainer {
+    padding: 20px;
+  }
+
+  .formRow,
+  .budgetFormRow,
+  .contactMethod,
+  .termsFormRow {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .mainFormContainer{
+    min-width: 400px;
+  }
+
+  .questions,
+  .contactMethod > div,
+  .budgetFormRow > div {
+    width: 100%;
+  }
+
+  .messageInputTable {
+    width: 100%;
+  }
+
+  .termsFormRow > custom-button {
+    width: 100%;
+  }
+      custom-slider {
+        margin-top: 600px;
+        display: block;
+    }
+    .letsMakeItHappenHeader{
+        min-width: 400px;
+    }
+
 }
 
 
