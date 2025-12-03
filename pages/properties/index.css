@@ -249,6 +249,7 @@ p{
   }
   .mainFormContainer {
     padding: 20px;
+    min-width: 400px;
   }
 
   .formRow,
@@ -258,10 +259,6 @@ p{
     flex-direction: column;
     gap: 16px;
     align-items: stretch;
-  }
-
-  .mainFormContainer{
-    min-width: 400px;
   }
 
   .questions,
