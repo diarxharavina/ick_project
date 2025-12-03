@@ -6,7 +6,7 @@ class PropertiesSliderComponent extends HTMLElement {
     render() {
         const properties = [
             {
-                image: '/assets/images/sliderImage1.png',
+                image: '../../assets/images/sliderImage1.png',
                 title: 'Seaside Serenity Villa',
                 description:
                     'A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...',
@@ -18,7 +18,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$550,000',
             },
             {
-                image: '/assets/images/sliderImage2.png',
+                image: '../../assets/images/sliderImage2.png',
                 title: 'Metropolitan Haven',
                 description:
                     'A chic and fully-furnished 2-bedroom apartment with panoramic city views...',
@@ -30,7 +30,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$240,000',
             },
             {
-                image: '/assets/images/sliderImage3.png',
+                image: '../../assets/images/sliderImage3.png',
                 title: 'Rustic Retreat Cottage',
                 description:
                     'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...',
@@ -42,7 +42,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$340,000',
             },
             {
-                image: '/assets/images/sliderImage1.png',
+                image: '../../assets/images/sliderImage1.png',
                 title: 'Seaside Serenity Villa',
                 description:
                     'A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...',
@@ -54,7 +54,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$550,000',
             },
             {
-                image: '/assets/images/sliderImage2.png',
+                image: '../../assets/images/sliderImage2.png',
                 title: 'Metropolitan Haven',
                 description:
                     'A chic and fully-furnished 2-bedroom apartment with panoramic city views...',
@@ -66,7 +66,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$240,000',
             },
             {
-                image: '/assets/images/sliderImage3.png',
+                image: '../../assets/images/sliderImage3.png',
                 title: 'Rustic Retreat Cottage',
                 description:
                     'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...',
@@ -78,7 +78,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$340,000',
             },
             {
-                image: '/assets/images/sliderImage1.png',
+                image: '../../assets/images/sliderImage1.png',
                 title: 'Seaside Serenity Villa',
                 description:
                     'A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...',
@@ -90,7 +90,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$550,000',
             },
             {
-                image: '/assets/images/sliderImage2.png',
+                image: '../../assets/images/sliderImage2.png',
                 title: 'Metropolitan Haven',
                 description:
                     'A chic and fully-furnished 2-bedroom apartment with panoramic city views...',
@@ -102,7 +102,7 @@ class PropertiesSliderComponent extends HTMLElement {
                 price: '$240,000',
             },
             {
-                image: '/assets/images/sliderImage3.png',
+                image: '../../assets/images/sliderImage3.png',
                 title: 'Rustic Retreat Cottage',
                 description:
                     'An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...',
