@@ -3,27 +3,26 @@ class HeaderComponent extends HTMLElement {
         this.render();
     }
     render() {
-
-        const isLoggedIn = () =>{
-            console.log(localStorage.getItem("accessToken"))
-            return !!localStorage.getItem("accessToken");
-        }
+        const isLoggedIn = () => {
+            console.log(localStorage.getItem('accessToken'));
+            return !!localStorage.getItem('accessToken');
+        };
 
         window.logOut = () => {
-            localStorage.removeItem("accessToken");
-        }
+            localStorage.removeItem('accessToken');
+        };
 
         window.openMenu = () => {
             window.document
                 .querySelector('.mobileHeader .nav-links')
                 .classList.add('open');
-        }
+        };
 
         window.closeMenu = () => {
             window.document
                 .querySelector('.mobileHeader .nav-links')
                 .classList.remove('open');
-        }
+        };
 
         window.closeBanner = () => {
             window.document
@@ -50,9 +49,10 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="../../pages/services/index.html">Services</a></li>
                 <li><a href="../../pages/contact/index.html">Contact Us</a></li>
             </ul>
-            ${isLoggedIn() 
-                ? `<a href="../../pages/login/index.html"><custom-button type="dark-btn" name="Log out" onclick="logOut()"></custom-button></a>`
-                : `
+            ${
+                isLoggedIn()
+                    ? `<a href="../../pages/login/index.html"><custom-button type="dark-btn" name="Log out" onclick="logOut()"></custom-button></a>`
+                    : `
                         <a href="../../pages/login/index.html"><custom-button type="purple-btn" name="Log In"></custom-button></a>
                     `
             }
@@ -69,9 +69,10 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="../../pages/properties/index.html">Properties</a></li>
                 <li><a href="../../pages/services/index.html">Services</a></li>
                 <li>
-                ${isLoggedIn() 
-                ? `<custom-button type="dark-btn" name="Log out" onclick="logOut()"><a href="../../pages/login/index.html"></a></custom-button>`
-                : `<custom-button type="purple-btn" name="Log In">
+                ${
+                    isLoggedIn()
+                        ? `<custom-button type="dark-btn" name="Log out" onclick="logOut()"><a href="../../pages/login/index.html"></a></custom-button>`
+                        : `<custom-button type="purple-btn" name="Log In">
                         <a href="../../pages/login/index.html"></a>
                     </custom-button>`
                 }
@@ -82,11 +83,13 @@ class HeaderComponent extends HTMLElement {
     </header>
         `;
 
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                if (link.href === window.location.href) {
-                    link.classList.add('active');
-                }
-            });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            const link2 = link.href.replace('index.html', '');
+            const location = window.location.href.replace('index.html', '');
+            if (link2 === location) {
+                link.classList.add('active');
+            }
+        });
     }
 }
 customElements.define('custom-header', HeaderComponent);
