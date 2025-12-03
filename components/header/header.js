@@ -68,14 +68,15 @@ class HeaderComponent extends HTMLElement {
                 <li><a href="../../pages/about">About Us</a></li>
                 <li><a href="../../pages/properties/index.html">Properties</a></li>
                 <li><a href="../../pages/services/index.html">Services</a></li>
+                <li><a href="../../pages/contact/index.html">Contact Us</a></li>
                 <li>
                 ${
-                    isLoggedIn()
-                        ? `<custom-button type="dark-btn" name="Log out" onclick="logOut()"><a href="../../pages/login/index.html"></a></custom-button>`
-                        : `<custom-button type="purple-btn" name="Log In">
-                        <a href="../../pages/login/index.html"></a>
-                    </custom-button>`
-                }
+                isLoggedIn()
+                    ? `<a href="../../pages/login/index.html"><custom-button type="dark-btn" name="Log out" onclick="logOut()"></custom-button></a>`
+                    : `
+                        <a href="../../pages/login/index.html"><custom-button type="purple-btn" name="Log In"></custom-button></a>
+                    `
+            }
                 </li>
                 <my-icon iconName="burger" onclick="closeMenu()" class="closeMenu"></my-icon>
             </ul>

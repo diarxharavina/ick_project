@@ -1,4 +1,4 @@
-class Component extends HTMLElement {
+class SliderComponent extends HTMLElement {
     connectedCallback() {
         this.render();
     }
@@ -37,4 +37,4 @@ class Component extends HTMLElement {
         `;
     }
 }
-customElements.define('custom-slider', Component);
+customElements.define('custom-slider', SliderComponent);

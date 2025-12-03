@@ -1,4 +1,4 @@
-.login-wrapper{
+.login-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,10 +110,6 @@
     cursor: auto;
 }
 
-
-
-
-
 .register-container {
     display: flex;
     flex-direction: column;
@@ -209,4 +205,13 @@
     border: none;
     border-radius: 12px;
     cursor: auto;
+}
+
+@media (max-width: 750px) {
+    .login-wrapper {
+        margin: 0;
+    }
+    .login-container{
+        padding-inline: 16px;
+    }
 }

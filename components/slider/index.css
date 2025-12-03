@@ -76,7 +76,8 @@
     display: none;
 }
 
-.carousel::scroll-button(right), .carousel::scroll-button(left) {
+.carousel::scroll-button(right),
+.carousel::scroll-button(left) {
     content: '➜';
     cursor: pointer;
     width: 50px;
@@ -90,18 +91,19 @@
     position-area: right center;
 }
 
-.carousel::scroll-button(left){
+.carousel::scroll-button(left) {
     content: '➜';
     transform: scaleX(-1);
     position-area: left center;
 }
 
-.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+.carousel::scroll-button(right):disabled,
+.carousel::scroll-button(left):disabled {
     opacity: 0.2;
     cursor: auto;
 }
 
-.properties-carousel::scroll-button(right), 
+.properties-carousel::scroll-button(right),
 .properties-carousel::scroll-button(left) {
     content: '➜';
     cursor: pointer;
@@ -122,13 +124,13 @@
     position-area: left center;
 }
 
-.properties-carousel::scroll-button(right):disabled, 
+.properties-carousel::scroll-button(right):disabled,
 .properties-carousel::scroll-button(left):disabled {
     opacity: 0.2;
     cursor: auto;
 }
 
-.faq-carousel::scroll-button(right), 
+.faq-carousel::scroll-button(right),
 .faq-carousel::scroll-button(left) {
     content: '➜';
     cursor: pointer;
@@ -149,13 +151,13 @@
     position-area: left center;
 }
 
-.faq-carousel::scroll-button(right):disabled, 
+.faq-carousel::scroll-button(right):disabled,
 .faq-carousel::scroll-button(left):disabled {
     opacity: 0.2;
     cursor: auto;
 }
 
-.testimonials-carousel::scroll-button(right), 
+.testimonials-carousel::scroll-button(right),
 .testimonials-carousel::scroll-button(left) {
     content: '➜';
     cursor: pointer;
@@ -176,12 +178,11 @@
     position-area: left center;
 }
 
-.testimonials-carousel::scroll-button(right):disabled, 
+.testimonials-carousel::scroll-button(right):disabled,
 .testimonials-carousel::scroll-button(left):disabled {
     opacity: 0.2;
     cursor: auto;
 }
-
 
 .carousel-item-properties {
     scroll-snap-align: start;
@@ -381,34 +382,43 @@
 }
 
 @media (max-width: 1310px) {
-    .slider-wrapper{
+    .slider-wrapper {
         width: 90vw;
     }
-    .carousel-item-properties{
+    .carousel-item-properties {
         flex: 0 0 50%;
     }
-    .carousel-item-faq{
+    .carousel-item-faq {
         flex: 0 0 50%;
     }
-    .carousel-item-testimonials{
+    .carousel-item-testimonials {
         flex: 0 0 50%;
     }
 }
 
 @media (max-width: 1000px) {
-    .slider-wrapper{
+    .slider-wrapper {
         width: 85vw;
     }
-    .carousel-item-properties{
+    .carousel-item-properties {
         flex: 0 0 100%;
     }
-    .carousel-item-faq{
+    .carousel-item-faq {
         flex: 0 0 100%;
     }
-    .carousel-item-testimonials{
+    .carousel-item-testimonials {
         flex: 0 0 100%;
     }
     .sparks {
-    display: none;
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .slider-section {
+        padding-block: 150px;
+    }
+    custom-button{
+        display: none;
     }
 }
