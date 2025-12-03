@@ -156,6 +156,12 @@ class PropertiesSliderComponent extends HTMLElement {
                     </div>`;
         }
         this.innerHTML = carouselItems;
+        const detailButtons = this.querySelectorAll('custom-button');
+        detailButtons.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                window.location.href = '../../pages/propertyDetails/index.html';
+            });
+        });
     }
 }
 
