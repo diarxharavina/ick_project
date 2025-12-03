@@ -59,7 +59,7 @@ h3{
     margin-bottom: 20px;
 }
 
-.propertiesSmallPictures{
+.propertiesSmallPictures{    
     background-color: #141414;
     border: 1px solid #262626;
     border-radius: 12px;
@@ -404,6 +404,38 @@ h3{
     .propertyDetailsWraper{
         padding-inline: 20px;
     }
+
+        .propertiesContainer {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .propertiesSmallPictures {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .propertiesSmallPictures img {
+        width: 25%;
+        height: 60px;
+    }
+
+    .propertiesSmallPictures img:nth-of-type(n+5) {
+        display: none;
+    }
+
+    .propertiesBigPictures {
+        gap: 10px;
+    }
+
+    .propertiesBigPictures img {
+        width: 100%;
+    }
+
+    .propertiesBigPictures img:nth-of-type(n+2) {
+        display: none;
+    }
+
     .shortDetailsOfProperties {
         flex-direction: column;
         align-items: flex-start;
@@ -469,10 +501,9 @@ h3{
 
     .specificsContainer .specificsOnDescription:nth-child(1),
     .specificsContainer .specificsOnDescription:nth-child(2) {
-        display: inline-flex;
-        gap: 20px;
+        padding-bottom: 20px;
         border-right: none;
-        padding-right: 0;
+        border-bottom: #262626 1px solid;
     }
 
     .specificsContainer .specificsOnDescription:nth-child(3) {
@@ -502,6 +533,10 @@ h3{
     }
     .detailsOnListingPriceMainContainer{
         min-width: 500px;
+    }
+          custom-slider {
+        margin-top: 200px;
+        display: block;
     }
 }
 
