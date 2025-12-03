@@ -1,13 +1,13 @@
-const onSubmit = async e => {
+const onSubmit = async (e) => {
     e.preventDefault();
 
-    const form = event.target;
+    const form = e.target;
 
     const username = form.username.value;
     const password = form.password.value;
 
-    console.log("Username:", username);
-    console.log("Password:", password);
+    console.log('Username:', username);
+    console.log('Password:', password);
 
     try {
         const response = await fetch('https://dummyjson.com/auth/login', {
@@ -20,6 +20,8 @@ const onSubmit = async e => {
             }),
         });
         const data = await response.json();
+
+        console.log(data);
 
         if (!response.ok) return;
 
@@ -43,9 +45,9 @@ const getCurrentUser = async () => {
 
         if (!response.ok) return;
 
-        const res = await response.json();
+        const data = await response.json();
 
-        console.log(res);
+        console.log(data);
     } catch (error) {
         console.error(error.message);
     }
