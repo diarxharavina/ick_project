@@ -38,8 +38,9 @@ class LoginComponent extends HTMLElement {
             </div>
         `;
 
-        this.querySelector(".signup-btn")
-            .addEventListener("click", () => this.renderRegister());
+        this.querySelector('.signup-btn').addEventListener('click', () =>
+            this.renderRegister()
+        );
     }
 
     // Render register container ==================
@@ -89,9 +90,10 @@ class LoginComponent extends HTMLElement {
             </div>
         `;
 
-        this.querySelector(".login-btn")
-            .addEventListener("click", () => this.renderLogin());
+        this.querySelector('.login-btn').addEventListener('click', () =>
+            this.renderLogin()
+        );
     }
 }
 
-customElements.define("custom-login", LoginComponent);
+customElements.define('custom-login', LoginComponent);

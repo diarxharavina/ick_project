@@ -126,6 +126,10 @@ header .mobileHeader {
         font-size: 2rem;
     }
 
+    .navbar custom-button button {
+        font-size: 1.75rem;
+    }
+
     header .mobileHeader .closeMenu {
         position: fixed;
         top: 1.85rem;
