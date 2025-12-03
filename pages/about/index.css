@@ -249,3 +249,24 @@
     line-height: 1.7;
     color: #999999;
 }
+
+@media (max-width: 600px) {
+    .navigatingTheEstateinExperienceSection {
+        margin-inline: 20px;
+    }
+    .title-text{
+        min-width: 500px;  
+    }
+    .stepCardsContainer{
+        min-width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .meetTheTeamSection{
+        padding-inline: 20px;
+    }
+    .allMembers{
+        display: flex;
+        flex-direction: column;
+    }
+}    

@@ -25,3 +25,9 @@
     color: #999999;
     font-weight: 400;
 }
+
+@media (max-width: 600px) {
+    .stepCardBox{
+        min-width: 500px;
+    }
+}
