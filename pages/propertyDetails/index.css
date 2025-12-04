@@ -449,47 +449,47 @@ h3{
         width: 100%;
     }
     .mainFormContainer {
-    padding: 20px;
-    min-width: 500px;
-  }
+        padding: 20px;
+        min-width: 500px;
+    }
 
-  .formRow,
-  .budgetFormRow,
-  .contactMethod,
-  .termsFormRow {
-    flex-direction: column;
-    gap: 16px;
-    align-items: stretch;
-  }
+    .formRow,
+    .budgetFormRow,
+    .contactMethod,
+    .termsFormRow {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
 
-  .questions,
-  .contactMethod > div,
-  .budgetFormRow > div {
-    width: 100%;
-  }
+    .questions,
+    .contactMethod > div,
+    .budgetFormRow > div {
+        width: 100%;
+    }
 
-  .messageInputTable {
-    width: 100%;
-  }
+    .messageInputTable {
+        width: 100%;
+    }
 
-  .termsFormRow > custom-button {
-    width: 100%;
-  }
-  .interestedContainer{
-    flex-direction: column;
-  }
+    .termsFormRow > custom-button {
+        width: 100%;
+     }
+    .interestedContainer{
+        flex-direction: column;
+    }
 
-  .interestedTitle{
-    min-width: 500px;
-  }
-  .values-text{
-    min-width: 500px;
-  }
-  .descriptionAndFeaturesContainer{
-    flex-direction: column;
-  }
+    .interestedTitle{
+        min-width: 500px;
+    }
+    .values-text{
+        min-width: 500px;
+    }
+    .descriptionAndFeaturesContainer{
+        flex-direction: column;
+    }
 
-  .descriptionContainer {
+    .descriptionContainer {
         min-width: 500px;
         box-sizing: border-box;
         padding: 20px;

@@ -4,11 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   smallImages.forEach((img, index) => {
     img.addEventListener('click', () => {
-      // First big image = clicked one
       bigImages[0].src = img.src;
 
-      // Second big image = next image
-      const nextIndex = (index + 1) % smallImages.length; // wraps around if last
+      const nextIndex = (index + 1) % smallImages.length;
       bigImages[1].src = smallImages[nextIndex].src;
     });
   });
