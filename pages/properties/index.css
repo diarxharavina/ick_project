@@ -159,6 +159,7 @@ p{
     padding: 14px 20px 14px 20px;
     border: solid 1px #262626;
     border-radius: 8px;
+    color: white;
 }
 
 .budgetFormRow {
@@ -226,55 +227,55 @@ p{
 }
 
 @media (max-width: 600px) {
-  .searchBarContainer {
-    min-width: 400px;
-    width: 100%;
-    border-radius: 12px;
-    padding-bottom: 10px;
-    margin-top: 500px;
-  }
-  .searchBar{
-    border-radius: 12px;
+    .searchBarContainer {
+        min-width: 400px;
+        width: 100%;
+        border-radius: 12px;
+        padding-bottom: 10px;
+        margin-top: 500px;
     }
-  .searchFiltersContainer {
-    flex-direction: column;
-    min-width: 400px;
-    align-items: stretch;
-    gap: 10px;
-    margin-top: 20px; 
-  }
+    .searchBar{
+        border-radius: 12px;
+    }
+    .searchFiltersContainer {
+        flex-direction: column;
+        min-width: 400px;
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 20px; 
+    }
 
-  .filterNo1 {
-    width: 100%;
-  }
-  .mainFormContainer {
-    padding: 20px;
-    min-width: 400px;
-  }
+    .filterNo1 {
+        width: 100%;
+    }
+    .mainFormContainer {
+        padding: 20px;
+        min-width: 400px;
+    }
 
-  .formRow,
-  .budgetFormRow,
-  .contactMethod,
-  .termsFormRow {
-    flex-direction: column;
-    gap: 16px;
-    align-items: stretch;
-  }
+    .formRow,
+    .budgetFormRow,
+    .contactMethod,
+    .termsFormRow {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
 
-  .questions,
-  .contactMethod > div,
-  .budgetFormRow > div {
-    width: 100%;
-  }
+    .questions,
+    .contactMethod > div,
+    .budgetFormRow > div {
+        width: 100%;
+    }
 
-  .messageInputTable {
-    width: 100%;
-  }
+    .messageInputTable {
+        width: 100%;
+    }
 
-  .termsFormRow > custom-button {
-    width: 100%;
-  }
-      custom-slider {
+    .termsFormRow > custom-button {
+        width: 100%;
+    }
+    custom-slider {
         margin-top: 600px;
         display: block;
     }

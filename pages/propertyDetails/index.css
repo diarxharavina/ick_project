@@ -534,9 +534,9 @@ h3{
     .detailsOnListingPriceMainContainer{
         min-width: 500px;
     }
-          custom-slider {
-        margin-top: 200px;
-        display: block;
+        custom-slider {
+            margin-top: 200px;
+            display: block;
     }
 }
 
