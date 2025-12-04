@@ -418,7 +418,7 @@
     .slider-section {
         padding-block: 150px;
     }
-    custom-button{
+    .slider-view-all-btn custom-button{
         display: none;
     }
 }
