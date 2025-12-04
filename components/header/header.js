@@ -10,6 +10,7 @@ class HeaderComponent extends HTMLElement {
 
         window.logOut = () => {
             localStorage.removeItem('accessToken');
+            localStorage.removeItem('refreshToken');
         };
 
         window.openMenu = () => {
