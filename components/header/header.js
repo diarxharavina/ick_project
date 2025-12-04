@@ -85,9 +85,9 @@ class HeaderComponent extends HTMLElement {
         `;
 
         document.querySelectorAll('.nav-links a').forEach(link => {
-            const link2 = link.href.replace('index.html', '');
+            const navLink = link.href.replace('index.html', '');
             const location = window.location.href.replace('index.html', '');
-            if (link2 === location) {
+            if (navLink === location) {
                 link.classList.add('active');
             }
         });
