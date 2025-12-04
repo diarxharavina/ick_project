@@ -6,9 +6,6 @@ const onSubmit = async (e) => {
     const username = form.username.value;
     const password = form.password.value;
 
-    console.log('Username:', username);
-    console.log('Password:', password);
-
     try {
         const response = await fetch('https://dummyjson.com/auth/login', {
             method: 'POST',
@@ -21,7 +18,6 @@ const onSubmit = async (e) => {
         });
         const data = await response.json();
 
-        console.log(data);
 
         if (!response.ok) return;
 
@@ -47,7 +43,6 @@ const getCurrentUser = async () => {
 
         const data = await response.json();
 
-        console.log(data);
     } catch (error) {
         console.error(error.message);
     }

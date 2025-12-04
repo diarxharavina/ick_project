@@ -65,7 +65,7 @@ class HeaderComponent extends HTMLElement {
             <header-logo></header-logo>
             <my-icon iconName="burger" onclick="openMenu()" class="burger"></my-icon>
             <ul class="nav-links">
-                <li><a href="../../pages/home/index.html">Home</a></li>
+                <li><a href="../../pag–≠es/home/index.html">Home</a></li>
                 <li><a href="../../pages/about">About Us</a></li>
                 <li><a href="../../pages/properties/index.html">Properties</a></li>
                 <li><a href="../../pages/services/index.html">Services</a></li>
