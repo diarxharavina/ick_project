@@ -11,6 +11,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 150px 400px 100px 162px;
+    background: linear-gradient(to right, #262626, transparent);
 }
 
 .services-hero-text {
